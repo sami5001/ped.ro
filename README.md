@@ -2,7 +2,7 @@
 
 ## Front end developer. Based in London
 
-I help startups and companies improve their online appearance with code. I specialise in UI development and I care deeply about user experience and design. I'm currently working as a lead front end developer at [Fathom](https://fathomlondon.com) building cool stuff for the financial industry.
+I'm currently working as a lead front end developer at [Fathom](https://fathomlondon.com) building cool stuff for the financial industry.
 
 ---
 
