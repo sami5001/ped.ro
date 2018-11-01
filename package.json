@@ -1,0 +1,16 @@
+{
+  "name": "ped.ro",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Pedro Duarte, Front end developer",
+  "author": "Pedro Duarte",
+  "license": "MIT",
+  "scripts": {
+    "start": "mdx-go src",
+    "build": "mdx-go build src --static"
+  },
+  "dependencies": {
+    "mdx-go": "^1.1.11",
+    "styled-components": "^4.0.2"
+  }
+}
