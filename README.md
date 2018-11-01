@@ -1,6 +1,6 @@
 # Pedro Duarte
 
-## Front end developer
+## Front end developer. Based in London
 
 I help startups and companies improve their online appearance with code. I specialise in UI development and I care deeply about user experience and design. I'm currently working as a lead front end developer at [Fathom](https://fathomlondon.com) building cool stuff for the financial industry.
 
@@ -17,12 +17,12 @@ I help startups and companies improve their online appearance with code. I speci
 
 ### Work
 
-- The Times
-- Warp Records
+- [The Times](https://thetimes.co.uk)
+- [Warp Records](https://warp.net)
 - Google
 - Facebook
 - Beats by Dre
-- Dona Rita
+- [Dona Rita](https://donarita.co.uk)
 
 ---
 
@@ -35,5 +35,5 @@ I help startups and companies improve their online appearance with code. I speci
 ---
 
 ```
-👊 built with `mdx` and `styled-system`
+👊 built with `mdx`
 ```
