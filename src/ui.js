@@ -1,7 +1,19 @@
 import React from "react";
 import { ComponentProvider } from "mdx-go";
 import styled, { keyframes } from "styled-components";
-import system from "system-components";
+import {
+  fontSize,
+  lineHeight,
+  fontFamily,
+  fontWeight,
+  opacity,
+  space,
+  letterSpacing,
+  color,
+  width,
+  maxWidth,
+  left
+} from "styled-system";
 
 const show = keyframes`
 		0% { opacity: 0 }
@@ -9,95 +21,107 @@ const show = keyframes`
 	}
 `;
 
-const delay = 300;
-const BaseWithAnimation = styled.div`
-  opacity: 0;
-  animation: ${show} ${delay * 4}ms ${delay}ms ease both;
+const DELAY = 300;
+const Base = styled.div`
+  ${fontSize};
+  ${lineHeight};
+  ${space};
+  ${opacity};
+  ${fontWeight};
+  animation: ${show} ${DELAY * 4}ms ${DELAY}ms ease both;
 `;
 
-export const Base = system({
-  is: BaseWithAnimation,
-  fontFamily: `-apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif`,
+Base.defaultProps = {
   fontSize: [2, 3, 4],
   lineHeight: 1.5,
-  px: [3, 4, 5, 6],
+  px: [4, 5, 6],
   py: 6,
-  fontWeight: 300
-});
+  fontWeight: 300,
+  opacity: 0
+};
 
-const H1 = system(
-  {
-    is: "h1",
-    fontFamily: "Teko",
-    fontSize: "inherit",
-    lineHeight: 1,
-    m: 0,
-    mb: [3, 4],
-    ml: [4],
-    fontSize: [6]
-  },
-  `
-	text-transform: uppercase;
-	letter-spacing: 6px
-`
-);
+const Title = styled.h1`
+  ${fontFamily};
+  ${fontSize};
+  ${lineHeight};
+  ${letterSpacing};
+  ${space};
+  text-transform: uppercase;
+`;
 
-const H2 = system(
-  {
-    is: "h2",
-    fontFamily: "Teko",
-    fontSize: [3],
-    lineHeight: 1.3,
-    color: "#cf1b41",
-    m: 0,
-    mb: [4],
-    width: 90
-  },
-  `
-	text-transform: uppercase;
-	letter-spacing: 3px
-`
-);
+Title.defaultProps = {
+  fontFamily: "Teko",
+  fontSize: 6,
+  lineHeight: 1,
+  letterSpacing: "6px",
+  m: 0,
+  mb: [3, 4]
+};
 
-const H3 = system(
-  {
-    is: "h2",
-    fontFamily: "Teko",
-    fontSize: [3],
-    lineHeight: 1.3,
-    m: 0,
-    mb: [4],
-    width: 90
-  },
-  `
-	text-transform: uppercase;
-	letter-spacing: 3px
-`
-);
+const Subtitle = styled.h2`
+  ${fontFamily};
+  ${fontSize};
+  ${lineHeight};
+  ${letterSpacing};
+  ${color};
+  ${space};
+  text-transform: uppercase;
+`;
 
-const P = system({
+Subtitle.defaultProps = {
+  fontFamily: "Teko",
+  fontSize: 3,
+  lineHeight: 1.3,
+  letterSpacing: "3px",
+  color: "#cf1b41",
+  m: 0,
+  mb: 4
+};
+
+const SectionTitle = styled.h3`
+  ${fontFamily};
+  ${fontSize};
+  ${lineHeight};
+  ${letterSpacing};
+  ${space};
+  text-transform: uppercase;
+`;
+
+SectionTitle.defaultProps = {
+  fontFamily: "Teko",
+  fontSize: 3,
+  lineHeight: 1.3,
+  letterSpacing: "3px",
+  m: 0,
+  mb: 4
+};
+
+const Text = styled.p`
+  ${maxWidth};
+  ${space};
+`;
+
+Text.defaultProps = {
   maxWidth: 800,
   m: 0,
-  ml: [4]
-});
+  ml: 4
+};
 
-const Ul = system(
-  {
-    is: "ul",
-    m: 0,
-    ml: 4,
-    p: 0
-  },
-  `list-style: none;`
-);
+const List = styled.ul`
+  ${space};
+  list-style: none;
+`;
 
-const A = system(
-  {
-    is: "a",
-    color: "inherit"
-  },
-  `text-decoration: none;`
-);
+List.defaultProps = {
+  m: 0,
+  ml: 4,
+  p: 0
+};
+
+const Link = styled.a`
+  color: inherit;
+  text-decoration: none;
+`;
 
 const svg = `<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -110,33 +134,38 @@ const Line = styled.div`
   text-align: center;
 	background: url('data:image/svg+xml;utf-8,${svg}');
 	background-size: 16px;
+	position: relative;
+	${width};
+	${space};
+	${left};
 `;
 
-const Hr = system(
-  {
-    is: Line,
-    my: 5,
-    ml: -6,
-    width: 128 // can I get this from the theme?
-  },
-  `
-border-bottom: ${props => themGet("space.0")(props)}px solid;
-`
-);
+Line.defaultProps = {
+  my: 5,
+  ml: 4,
+  width: 0,
+  pl: [4, 5, 6],
+  left: -6
+};
 
-const Pre = system({
+const Pre = styled.pre`
+  ${fontFamily};
+  ${fontSize};
+`;
+
+Pre.defaultProps = {
   fontFamily: `"Courier New", monospace`,
   fontSize: 1
-});
+};
 
 const components = {
-  h1: H1,
-  h2: H2,
-  h3: H3,
-  p: P,
-  ul: Ul,
-  a: A,
-  hr: Hr,
+  h1: Title,
+  h2: Subtitle,
+  h3: SectionTitle,
+  p: Text,
+  ul: List,
+  a: Link,
+  hr: Line,
   pre: Pre
 };
 
