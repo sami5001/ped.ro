@@ -1,13 +1,13 @@
 import React from "react";
 import { ComponentProvider } from "mdx-go";
-import styled, { createGlobalStyle, keyframes } from "styled-components";
+import styled, { css, createGlobalStyle, keyframes } from "styled-components";
 
 const highlightColor = "hsla(0, 80%, 50%, 1)";
 
 const GlobalStyle = createGlobalStyle`
 	:root {
 		--space: 32px;
-		--type: 18px;
+		--type: 20px;
 		--primary-color: hsla(1, 100%, 100%, 1);
 		--secondary-color: hsla(0, 0%, 0%, .99);
 		--highlight-color: ${highlightColor};
@@ -43,7 +43,6 @@ const show = keyframes`
 const DELAY = 333;
 
 const Base = styled.div`
-  font-family: Oswald;
   font-size: var(--type);
   font-weight: 700;
   line-height: 1.5;
@@ -51,37 +50,34 @@ const Base = styled.div`
   background-color: var(--primary-color);
   color: var(--secondary-color);
   animation: ${show} ${DELAY * 4}ms ${DELAY}ms ease both;
-`;
 
-const Title = styled.h1`
-  font-size: inherit;
-  font-weight: inherit;
-  text-transform: uppercase;
-  line-height: 1;
-  margin: 0;
-`;
-
-const Subtitle = styled.h2`
-  font-size: inherit;
-  font-weight: inherit;
-  text-transform: uppercase;
-  color: var(--highlight-color);
-  margin: 0;
-`;
-
-const SectionTitle = styled.h3`
-  font-size: inherit;
-  font-weight: inherit;
-  text-transform: uppercase;
-  margin: 0 0 var(--space);
-
-  @media (min-width: 40em) {
-    font-size: calc(var(--type) - 10px);
+  @media (max-width: 40em) {
+    padding-top: calc(var(--space) * 3);
+    padding-bottom: calc(var(--space) * 3);
   }
 `;
 
-const Text = styled.p`
+const resetHeading = css`
   font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+`;
+
+const Title = styled.h1`
+  ${resetHeading};
+`;
+
+const Subtitle = styled.h2`
+  ${resetHeading};
+  color: var(--highlight-color);
+`;
+
+const SectionTitle = styled.h3`
+  ${resetHeading};
+  margin-bottom: var(--space);
+`;
+
+const Text = styled.p`
   max-width: 800px;
   margin: var(--space) 0 0 var(--space);
 `;
@@ -116,8 +112,8 @@ const ZigZag = styled.div`
   width: calc(var(--space) * 2);
 
 	@media(max-width: 40em) {
-		margin-top: calc(var(--space) * 2);
-		margin-bottom: calc(var(--space) * 2);
+		margin-top: calc(var(--space) * 3);
+		margin-bottom: calc(var(--space) * 3);
 	}
 `;
 
