@@ -40,8 +40,6 @@ const show = keyframes`
 	}
 `;
 
-const DELAY = 333;
-
 const Base = styled.div`
   font-size: var(--type);
   font-weight: 700;
@@ -49,7 +47,7 @@ const Base = styled.div`
   padding: var(--space);
   background-color: var(--primary-color);
   color: var(--secondary-color);
-  animation: ${show} ${DELAY * 4}ms ${DELAY}ms ease both;
+  animation: ${show} 2s ease both;
 
   @media (max-width: 40em) {
     padding-top: calc(var(--space) * 3);
