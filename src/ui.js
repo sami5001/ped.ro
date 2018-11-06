@@ -89,7 +89,7 @@ const List = styled.ul`
 const Link = styled.a`
   color: inherit;
   text-decoration: none;
-  transition: color ${DELAY}ms;
+  transition: color 300ms;
 
   &:hover {
     color: var(--highlight-color);

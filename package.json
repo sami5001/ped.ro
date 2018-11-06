@@ -7,9 +7,11 @@
   "license": "MIT",
   "scripts": {
     "start": "mdx-go src",
-    "build": "mdx-go build src --static"
+    "build": "mdx-go build src --static && npm run cp-static",
+    "cp-static": "cp-cli static/ dist/static/"
   },
   "dependencies": {
+    "cp-cli": "^1.1.2",
     "mdx-go": "^1.1.11",
     "styled-components": "^4.0.2"
   }
