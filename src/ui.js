@@ -75,26 +75,49 @@ const SectionTitle = styled.h3`
   margin-bottom: var(--space);
 `;
 
+const JobTitle = styled.h4`
+  ${resetHeading};
+  max-width: 800px;
+  margin-bottom: calc(var(--space) / 2);
+  margin-left: var(--space);
+
+  em {
+    display: block;
+    font-style: normal;
+  }
+`;
+
 const Text = styled.p`
   max-width: 800px;
-  margin: var(--space) 0 0 var(--space);
+  margin: 0 0 var(--space) var(--space);
 `;
 
 const List = styled.ul`
   list-style: none;
-  margin: var(--space) 0 0 var(--space);
+  max-width: 800px;
+  margin: 0 0 var(--space) var(--space);
   padding: 0;
 `;
 
-const Link = styled.a`
+const A = styled.a`
   color: inherit;
-  text-decoration: none;
   transition: color 300ms;
 
   &:hover {
     color: var(--highlight-color);
   }
 `;
+
+const Link = ({ href: _href, ...props }) => {
+  let href = _href;
+  const isAbsoluteUrl = href => /^https?:\/\/|^\/\//i.test(href);
+
+  if (!isAbsoluteUrl(href)) {
+    href = href.replace(".md", "");
+  }
+
+  return <A href={href} {...props} />;
+};
 
 const svg = `
 	<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -125,6 +148,7 @@ const components = {
   h1: Title,
   h2: Subtitle,
   h3: SectionTitle,
+  h4: JobTitle,
   p: Text,
   ul: List,
   a: Link,
