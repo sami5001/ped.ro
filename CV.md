@@ -10,6 +10,24 @@ I am a front end developer with over 10 years experience. I specialise in progre
 
 ## Career History
 
+### Fathom
+
+#### Lead front end developer _Apr 1016 - Present_
+
+I'm currently working at Fathom helping build and lead projects in the financial industry. These projects vary from stock trading applications to business consultansy software.
+
+### The Times
+
+#### Lead UI Developer _Mar 2015 - Mar 2016_
+
+I was hired by News UK to lead the rebuild of the new The Times website. I worked alongside VD and UX designers, delivery managers, journalists and stakeholders to collaboratively come up with the new design and development process. I built the website using a component-driven approach. For more information, check out the [case study](https://medium.com/swlh/building-the-ui-for-the-new-the-times-website-26dc4e6569e) I wrote about this project.
+
+### Facebook
+
+#### Senior front end developer _Apr 2015 – May 2015_
+
+I was approached by Facebook to help them build a landing page for an Instagram campaign called Summer Toolkit. I worked directly with the delivery manager and their internal designer. My task was to take the design and build it in a mobile first approach. Additionally I also applied some other good practices such as progressive enhancement.
+
 ### Fluxx
 
 #### Senior front end developer & Prototype developer _Jan 2015 - Feb 2015_
@@ -69,9 +87,10 @@ Working at Lighthouse Media Group broadened my knowledge in various departments,
 
 ### General Development
 
-- Performance analysis & optimisation
 - Responsive development
+- Performance analysis & optimisation
 - CSS3 transitions and animations
+- GraphQL
 - JSON & REST
 - GIT, Mercurial, SVN
 - Agile methodologies
@@ -84,22 +103,17 @@ Working at Lighthouse Media Group broadened my knowledge in various departments,
 
 ### CSS
 
+- CSS in JS (Styled Components, Emotion)
 - Scalable CSS
 - Methodologies & conventions (BEM, OOCSS, SMACSS or SuitCSS)
 - Sass, Less, Stylus
 
 ### Javascript
 
-- VanillaJS
+- Vanilla JS
+- React JS
 - JavaScript libraries
-- MVC libraries and frameworks such as AngularJS
 - HTML5's APIs and polyfills
-
-### Workflow
-
-- Bower
-- RequireJS, Browserfy
-- Gulp, Grunt
 
 ### Collaboration
 
@@ -114,9 +128,8 @@ Working at Lighthouse Media Group broadened my knowledge in various departments,
 
 ### Norwich City College
 
-BTEC National Diploma IT Practitioners, Norwich, England 2007
-
-Information and Communication Technology, Norwich, England 2006
+- BTEC National Diploma IT Practitioners, Norwich, England 2007
+- Information and Communication Technology, Norwich, England 2006
 
 ---
 
