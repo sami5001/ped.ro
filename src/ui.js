@@ -2,6 +2,7 @@ import React from "react";
 import { ComponentProvider } from "mdx-go";
 import styled, { css, createGlobalStyle, keyframes } from "styled-components";
 
+const isAbsoluteUrl = url => /^https?:\/\/|^\/\//i.test(url);
 const highlightColor = "hsla(0, 80%, 50%, 1)";
 
 const GlobalStyle = createGlobalStyle`
@@ -108,16 +109,9 @@ const A = styled.a`
   }
 `;
 
-const Link = ({ href: _href, ...props }) => {
-  let href = _href;
-  const isAbsoluteUrl = href => /^https?:\/\/|^\/\//i.test(href);
-
-  if (!isAbsoluteUrl(href)) {
-    href = href.replace(".md", "");
-  }
-
-  return <A href={href} {...props} />;
-};
+const Link = ({ href, ...props }) => (
+  <A href={isAbsoluteUrl(href) ? href : href.replace(".md", "")} {...props} />
+);
 
 const svg = `
 	<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
