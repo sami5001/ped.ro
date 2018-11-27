@@ -8,11 +8,13 @@
   "scripts": {
     "start": "mdx-go src",
     "build": "mdx-go build src --static && npm run cp-static",
-    "cp-static": "cp-cli static/ dist/static/"
+    "cp-static": "cp-cli static/ dist/static/",
+    "format": "prettier --config .prettierrc --write \"src/**/*.js}\""
   },
   "dependencies": {
     "cp-cli": "^1.1.2",
     "mdx-go": "^2.0.0-31",
+    "prettier": "^1.15.2",
     "styled-components": "^4.1.1"
   }
 }
