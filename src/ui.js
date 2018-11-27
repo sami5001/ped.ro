@@ -6,39 +6,39 @@ const isAbsoluteUrl = url => /^https?:\/\/|^\/\//i.test(url);
 const highlightColor = "hsla(0, 80%, 50%, 1)";
 
 const GlobalStyle = createGlobalStyle`
-	:root {
-		--space: 32px;
-		--type: 20px;
-		--primary-color: hsla(1, 100%, 100%, 1);
-		--secondary-color: hsla(0, 0%, 0%, .99);
-		--highlight-color: ${highlightColor};
-	}
+  :root {
+    --space: 32px;
+    --type: 20px;
+    --primary-color: hsla(1, 100%, 100%, 1);
+    --secondary-color: hsla(0, 0%, 0%, .99);
+    --highlight-color: ${highlightColor};
+  }
 
-	@media(min-width: 40em) {
-		:root {
-			--space: 64px;
-			--type: 24px;
-		}
-	}
+  @media(min-width: 40em) {
+    :root {
+      --space: 64px;
+      --type: 24px;
+    }
+  }
 
-	@media(min-width: 52em) {
-		:root {
-			--space: 128px;
-			--type: 32px;
-		}
-	}
+  @media(min-width: 52em) {
+    :root {
+      --space: 128px;
+      --type: 32px;
+    }
+  }
 
-	::selection {
-		background: var(--secondary-color);
-		color: var(--primary-color);
-		opacity: 0;
-	}
+  ::selection {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    opacity: 0;
+  }
 `;
 
 const show = keyframes`
-		0% { opacity: 0 }
-		100% { opacity: 1 }
-	}
+    0% { opacity: 0 }
+    100% { opacity: 1 }
+  }
 `;
 
 const Base = styled.div`
@@ -114,22 +114,22 @@ const Link = ({ href, ...props }) => (
 );
 
 const svg = `
-	<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-			<polygon fill="${highlightColor}" points="0 24 16 0 32 24 32 32 16 8.00141567 0 32"></polygon>
-	</svg>
+  <svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <polygon fill="${highlightColor}" points="0 24 16 0 32 24 32 32 16 8.00141567 0 32"></polygon>
+  </svg>
 `;
 
 const ZigZag = styled.div`
-	background: url('data:image/svg+xml;utf-8,${svg}');
-	background-size: 16px;
+  background: url('data:image/svg+xml;utf-8,${svg}');
+  background-size: 16px;
   height: 16px;
-	margin: var(--space) 0 var(--space) calc(var(--space) * -1);
+  margin: var(--space) 0 var(--space) calc(var(--space) * -1);
   width: calc(var(--space) * 2);
 
-	@media(max-width: 40em) {
-		margin-top: calc(var(--space) * 3);
-		margin-bottom: calc(var(--space) * 3);
-	}
+  @media(max-width: 40em) {
+    margin-top: calc(var(--space) * 3);
+    margin-bottom: calc(var(--space) * 3);
+  }
 `;
 
 const Pre = styled.pre`
