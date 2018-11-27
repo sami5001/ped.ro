@@ -14,7 +14,7 @@ I am a front end developer with over 10 years experience. I specialise in progre
 
 #### Lead front end developer _Apr 1016 - Present_
 
-I'm currently working at Fathom helping build and lead projects in the financial industry. These projects vary from stock trading applications to business consultansy software.
+I'm currently working at Fathom helping build and lead projects in the financial industry. These projects vary from stock trading applications to business consultancy software.
 
 ### The Times
 
