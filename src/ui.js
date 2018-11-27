@@ -153,7 +153,7 @@ const components = {
   ul: List,
   a: Link,
   hr: ZigZag,
-  pre: Pre
+  pre: Pre,
 };
 
 export const Root = ({ children }) => (
