@@ -4,7 +4,8 @@
 
 ### 29/M/London
 
-I am a front end developer with over 10 years experience. I specialise in progressive enhacement development and I care deeply about user experience and design.
+
+I'm a front end developer with over 10 years experience. I've worked in various industries such as advertising, editorial, financial and start-ups. I'm interested in JAMstack, design systems, good DX/UX and under engineering.
 
 ---
 
@@ -14,7 +15,7 @@ I am a front end developer with over 10 years experience. I specialise in progre
 
 #### Lead front end developer _Apr 2016 - Present_
 
-I'm currently working at Fathom helping build and lead projects in the financial industry. These projects vary from stock trading applications to business consultancy software.
+I'm currently working at Fathom helping build and lead projects in the financial industry. These projects vary from stock trading applications to business consultancy software. 
 
 ### The Times
 
