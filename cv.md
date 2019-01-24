@@ -66,7 +66,7 @@ Durign my time at R/GA, I worked on a large variety of their clients. I built si
 
 #### Front end developer _May 2010 - Sep 2011_
 
-Being at Pod1 challenged my ability to be creative while dealing with all the constraints of the web platform and the client's brand. I am mainly working on fashion e-commerce websites powered by Magento and WordPress CMS websites. I have developed a better understanding of web design and digital thinking, as well as the opportunity to work alongside other creatives, the UX team, project managers and developersensuring that all projects are of the highest standards throughout.
+Being at Pod1 challenged my ability to be creative while dealing with all the constraints of the web platform and the client's brand. I am mainly working on fashion e-commerce websites powered by Magento and WordPress CMS websites. I have developed a better understanding of web design and digital thinking, as well as the opportunity to work alongside other creatives, the UX team, project managers and developers ensuring that all projects are of the highest standards throughout.
 
 #### Selected clients
 
