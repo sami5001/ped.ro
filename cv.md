@@ -52,7 +52,7 @@ I was responsible for the front end architecture of the new [Warp Records](http:
 
 #### Open standards developer _Oct 2011 - Aug 2014_
 
-Durign my time at R/GA, I worked on a large variety of their clients. I built simple static sites using tools such as **Jekyll** to scalable object-oriented platforms using frameworks such as **AngularJS**. I have also architectured and delivered detailed **styleguides** to clients, the latest one was for Google, where I led the front end development. Here's a [link to the styleguide](https://developers.google.com/web/fundamentals/resources/styleguide/ "Web Fundamentals Styelguide").
+Durign my time at R/GA, I worked on a large variety of their clients. I built simple static sites using tools such as **Jekyll** to scalable object-oriented platforms using frameworks such as **AngularJS**. I have also architectured and delivered detailed **styleguides** to clients, the latest one was for Google, where I led the front end development.
 
 #### Selected clients
 
