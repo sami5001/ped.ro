@@ -33,7 +33,7 @@ I was approached by Facebook to help them build a landing page for an Instagram 
 
 #### Senior front end developer & Prototype developer _Jan 2015 - Feb 2015_
 
-I was taken oboard to help facilitate the onboarding proccess for new business clients of Lloyds Bank. I was responsible for the user experience, UI design and development. My task was to implement a better UI/UX and use front end technologies to help the sign up process become much easier and faster for the users.
+I was taken aboard to help facilitate the onboarding process for new business clients of Lloyds Bank. I was responsible for the user experience, UI design and development. My task was to implement a better UI/UX and use front end technologies to help the sign up process become much easier and faster for the users.
 
 ### Stinkdigital
 
