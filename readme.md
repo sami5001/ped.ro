@@ -28,6 +28,7 @@ I'm currently working as a lead front end developer at [Fathom](https://fath.om)
 
 ### Writing
 
+- [WTF is JAMstack?](https://jamstack.wtf)
 - [Building the UI for The Times](https://medium.com/swlh/building-the-ui-for-the-new-the-times-website-26dc4e6569e)
 - [JAMstack with Gatsby, Netlify and Netlify CMS](https://medium.com/netlify/jamstack-with-gatsby-netlify-and-netlify-cms-a300735e2c5d)
 - [Starting a food business from scratch](https://medium.com/@OiDonaRita/starting-a-food-business-from-scratch-9baed673657c)
