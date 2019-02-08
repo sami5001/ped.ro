@@ -2,7 +2,7 @@
 
 ## Front end developer. Based in London
 
-I'm currently working as a lead front end developer at [Fathom](https://fathomlondon.com) building cool stuff for the financial industry. Interested in JAMstack, design systems, good DX/UX and under engineering. Take a look at my [CV](./cv.md)
+I'm currently working as a lead front end developer at [Fathom](https://fath.om) building cool stuff for the financial industry. Interested in JAMstack, design systems, good DX/UX and under engineering. Take a look at my [CV](./cv.md)
 
 ---
 
