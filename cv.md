@@ -5,17 +5,24 @@
 ### 29/M/London
 
 
-I'm a front end developer with over 10 years experience. I've worked in various industries such as advertising, editorial, financial and start-ups. I'm interested in JAMstack, design systems, good DX/UX and under engineering.
+I'm a front end developer with over 10 years experience. I've worked in various industries such as advertising, editorial, financial and start-ups. I'm interested in design systems, JAMstack, good DX/UX and under engineering.
 
 ---
 
 ## Career History
 
+### Modulz
+
+#### Product engineer _Mar 2019 - Present_
+
+Helping close the gap between designers and developers. [How?](https://www.kickstarter.com/projects/stephenhaney/modulzthe-next-step-in-visual-coding)
+
+
 ### Fathom
 
-#### Lead front end developer _Apr 2016 - Present_
+#### Lead front end developer _Apr 2016 - Mar 2019_
 
-I'm currently working at Fathom helping build and lead projects in the financial industry. These projects vary from stock trading applications to business consultancy software. 
+At Fathom I helped build and lead projects in the financial industry. These projects vary from stock trading applications to business consultancy software. 
 
 ### The Times
 
