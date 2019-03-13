@@ -2,7 +2,7 @@
 
 ## Front end developer. Based in London
 
-I'm currently working as a lead front end developer at [Fathom](https://fath.om) building cool stuff for the financial industry. Interested in JAMstack, design systems, good DX/UX and under engineering. Take a look at my [CV](./cv.md)
+I'm a product engineer at [Modulz](https://modulz.app) helping close the gap between designers and developers. Interested in design systems, JAMstack, good DX/UX and under engineering. Take a look at my [CV](./cv.md)
 
 ---
 
@@ -21,6 +21,8 @@ I'm currently working as a lead front end developer at [Fathom](https://fath.om)
 - [Warp Records](https://warp.net)
 - Google
 - Facebook
+- Commerzbank
+- AlixPartners
 - Beats by Dre
 - [Dona Rita](https://donarita.co.uk)
 
