@@ -2,7 +2,7 @@
 
 ## Pedro Duarte
 
-### 29/M/London
+### 30/M/London
 
 
 I'm a front end developer with over 10 years experience. I've worked in various industries such as advertising, editorial, financial and start-ups. I'm interested in design systems, JAMstack, good DX/UX and under engineering.
