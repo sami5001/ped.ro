@@ -2,7 +2,7 @@
 
 ## Front end developer. Based in Barcelona
 
-I'm a product engineer at [Modulz](https://modulz.app) helping close the gap between designers and developers. Interested in design systems, JAMstack, good DX/UX and under engineering. Take a look at my [CV](./cv.md)
+I'm a product engineer at [Modulz](https://modulz.app) helping close the gap between designers and developers. Interested in design systems, JAMstack, good DX/UX and under engineering. Born in Brazil, raised in the UK, living in Barcelona. Take a look at my [CV](./cv.md)
 
 ---
 
