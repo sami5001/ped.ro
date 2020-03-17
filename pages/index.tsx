@@ -89,7 +89,7 @@ const Home = () => {
         >
           You can find me on{' '}
           <Link
-            href="https://modulz.app"
+            href="https://twitter.com/peduarte"
             target="_blank"
             sx={{
               textDecoration: 'underline',
@@ -100,7 +100,7 @@ const Home = () => {
           </Link>{' '}
           or{' '}
           <Link
-            href="https://modulz.app"
+            href="https://github.com/peduarte"
             target="_blank"
             sx={{
               textDecoration: 'underline',
