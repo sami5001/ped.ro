@@ -1,42 +1,40 @@
-# Pedro Duarte
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/372831/76622024-f450e800-6530-11ea-9a68-86d348316c57.png" width="200" height="200" alt="Modulz" />
+</p>
 
-## Front end developer. Based in Barcelona
-
-I'm a product engineer at [Modulz](https://modulz.app) helping close the gap between designers and developers. Interested in design systems, JAMstack, good DX/UX and under engineering. Born in Brazil, raised in the UK, living in Barcelona. Take a look at my [CV](./cv.md)
-
----
-
-### Contact
-
-- [GitHub](https://github.com/peduarte)
-- [Twitter](https://twitter.com/peduarte)
-- [LinkedIn](https://uk.linkedin.com/in/peduarteltd)
-- [Email](mailto:contact@peduarte.com)
+<h3 align="center">
+  An open source repo for Modulz's marketing site, blog and learning platform.
+</h3>
 
 ---
 
-### Work
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
 
-- [The Times](https://thetimes.co.uk)
-- [Warp Records](https://warp.net)
-- Google
-- Facebook
-- Commerzbank
-- AlixPartners
-- Beats by Dre
-- [Dona Rita](https://donarita.co.uk)
+## Getting Started
 
----
+First, run the development server:
 
-### Writing
-
-- [WTF is JAMstack?](https://jamstack.wtf)
-- [Building the UI for The Times](https://medium.com/swlh/building-the-ui-for-the-new-the-times-website-26dc4e6569e)
-- [JAMstack with Gatsby, Netlify and Netlify CMS](https://medium.com/netlify/jamstack-with-gatsby-netlify-and-netlify-cms-a300735e2c5d)
-- [Starting a food business from scratch](https://medium.com/@OiDonaRita/starting-a-food-business-from-scratch-9baed673657c)
-
----
-
+```bash
+npm run dev
+# or
+yarn dev
 ```
-👊 built with `mdx`
-```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/zeit/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on ZEIT Now
+
+The easiest way to deploy your Next.js app is to use the [ZEIT Now Platform](https://zeit.co/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
