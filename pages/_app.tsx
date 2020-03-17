@@ -16,6 +16,10 @@ export const GlobalStyles = createGlobalStyle(
       margin: 0,
     },
 
+    a: {
+      transition: 'all 100ms ease-in-out',
+    },
+
     '&::selection': {
       backgroundColor: theme.colors.yellow,
     },
