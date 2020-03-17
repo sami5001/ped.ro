@@ -31,7 +31,7 @@ const Blog = () => {
         {blogPosts
           .sort((a, b) => Number(new Date(b.publishedAt)) - Number(new Date(a.publishedAt)))
           .map((post: FrontMatter) => (
-            <BlogCard frontMatter={post} />
+            <BlogCard key={post.title} frontMatter={post} />
           ))}
       </Container>
     </Box>

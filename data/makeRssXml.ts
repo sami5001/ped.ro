@@ -34,7 +34,6 @@ const makeItemsRss = ({ baseUrl, frontMatters }: MakeItemsRssProps) => {
 				<title>${frontMatter.title}</title>
 				<link>${baseUrl}/${frontMatter.__resourcePath.replace('.mdx', '')}</link>
 				<pubDate>${frontMatter.publishedAt}</pubDate>
-				<description>${frontMatter.summary}</description>
 			</item>
 		`;
   });

@@ -18,7 +18,7 @@ export default (frontMatter: FrontMatter) => {
 
     return (
       <React.Fragment>
-        <TitleAndMetaTags title={frontMatter.title} description={frontMatter.summary} />
+        <TitleAndMetaTags title={frontMatter.title} />
 
         <Container px={[3, 5]} py={6} sx={{ maxWidth: 720 }}>
           <NextLink href="/" passHref>

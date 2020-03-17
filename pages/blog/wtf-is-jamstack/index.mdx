@@ -1,0 +1,200 @@
+---
+title: 'WTF is JAMstack?'
+publishedAt: '2019-02-07'
+---
+
+JAMstack is revolutionising the way we think about workflow by providing a simpler developer experience, better performance, lower cost and greater scalability.
+
+Yet, you may be wondering: how? why? wtf is it?
+
+This is why I created [https://jamstack.wtf](https://jamstack.wtf)
+
+The goal of this guide is to gather the concept of JAMstack in a straight-forward guide to encourage other developers to adopt the workflow.
+[**JAMstack WTF** - _A simple guide to help you get on the JAMstack_](https://jamstack.wtf)
+
+The content below was taken from the guide above 👆
+
+Please sit back, relax and enjoy ✌️
+
+---
+
+**Table of contents**
+
+What is JAMstack?
+
+- Meaning
+- Benefits
+- Best practices
+- Workflow
+- Timeline
+  Getting started
+- Development
+- Deployment
+- Dynamic parts
+- CMS
+  About
+
+## What is JAMstack?
+
+### Meaning
+
+![](https://cdn-images-1.medium.com/max/2968/1*T4kRqCGtoD8PuPjR_ZbPxQ.png)
+
+JAM stands for Javascript, API & Markup.
+
+**Javascript**
+Dynamic functionalities are handled by Javascript. There is no restriction on which framework or library you must use.
+
+**APIs**
+Server side operations are abstracted into reusable APIs and accessed over HTTPS with Javascript. These can be third party services or your custom function.
+
+**Markup
+**Websites are served as static HTML files. These can be generated from source files, such as Markdown, using a Static Site Generator.
+
+### Benefits
+
+Here are the main benefits provided by the JAMstack
+
+**Faster performance
+**Serve pre-built markup and assets over a CDN
+
+**More secure
+**No need to worry about server or database vulnerabilities
+
+**Less expensive
+**Hosting of static files are cheap or [even free](https://netlify.com/)
+
+**Better developer experience
+**Front end developers can focus on the front end, without being tied to a monolithic architecture. This usually means quicker and more focused development
+
+**Scalability
+**If your product suddenly goes viral and has many active users, the CDN seamlessly compensates
+
+### Best Practices
+
+The following tips will help you leverage the best out of the stack.
+
+**Content delivery network
+**Since all the markup and assets are pre-built, they can be served via CDN. This provides better performance and easier scalability.
+
+[Learn more](https://www.cloudflare.com/learning/cdn/what-is-a-cdn/)
+
+**Atomic deploys
+**Each deploy is a full snapshot of the site. This helps guarantee a consistent version of the site globally.
+
+[Learn more](https://buddy.works/blog/introducing-atomic-deployments#what-are-atomic-deployments)
+
+**Cache invalidation
+**Once your build is uploaded, the CDN invalidates its cache. This means that your new build is live in an instant.
+
+[Learn more](https://www.netlify.com/blog/2015/09/11/instant-cache-invalidation/)
+
+**Everything in version control
+**Your codebase lives in Version Control System, such as Git. The main benefits are: change history of every file, collaborators and traceability.
+
+[Learn more](https://www.atlassian.com/git/tutorials/what-is-version-control)
+
+**Automated builds
+**Your server is notified when a new build is required, typically via webhooks. Server builds the project, updates the CDNs and the site is live.
+
+[Learn more](https://www.agilealliance.org/glossary/automated-build)
+
+### Workflow
+
+Here’s how an ideal JAMstack workflow would look like
+
+![](https://cdn-images-1.medium.com/max/2000/1*iaJIWN-1jhRBTiVfmYYdlA.png)
+
+### Timeline
+
+**2015
+**Static sites are becoming popular due to the popularity of certain SSG such as Jekyll.
+
+**2016
+**A small group of developers believe that Static sites don’t have to be static and the term “JAMstack” comes to life.
+
+**2017
+**The modern web revolution starts prioritising the importance of performance, scalability and developer experience. The term JAMstack starts to be adopted by a wider group of developers and the first enterprise JAMstack projects are announced.
+
+**2018
+**Tool likes Netlify, Gatsby and Contentful have helped promote the term and the community is rapidly growing. This was also the year of the first JAMstack Conference.
+
+[Source: SnipCart](https://snipcart.com/blog/jamstack)
+
+## Getting Started
+
+However you decide to generate your HTML assets is up to you. The three most common approaches are:
+
+### Development
+
+**Hand coding
+**Simple and effective method of writing HTML, it’s ideal for super simple pages.
+
+**Static Site Generators
+**Most JAMstack sites are powered by a static site generator. There’s no enforcement on which SSG you decide to use.
+
+- [Gatsby](https://www.gatsbyjs.org/)
+- [Next.js](https://nextjs.org/)
+- [Hugo](https://gohugo.io/)
+
+[See more SSGs](https://www.staticgen.com/)
+
+**Frontend Framework
+**Most frameworks don’t output static HTML files, however it is possible to do that but it requires more tooling experience and maintenance.
+
+- [React](http://reactjs.org/)
+- [Vue.js](https://vuejs.org/)
+- [Preact](https://preactjs.com/)
+
+### Deployment
+
+Your built site needs to be hosted somewhere. There are great services that provides this for free and with ease.
+
+- [Netlify](https://netlify.com/)
+- [Zeit](https://zeit.co/)
+- [Github Pages](https://pages.github.com/)
+
+[See more deployment services](https://www.thenewdynamic.org/tools/hosting-deployment/)
+
+### Dynamic parts
+
+JAMstack websites don’t have to be static. There are great services available to help bring some dynamic data to your product.
+
+**Custom functions
+**You can also abstract your own functions into reusable APIs. For this you can use [AWS lambda functions](https://aws.amazon.com/lambda/features/) or [Netlify Functions](https://functions.netlify.com/examples/)
+
+**Comments
+**Many JAMstack products have dynamic comment sections. These are typically used on blogs
+
+**Forms**
+A great way to interact with your audience
+
+**E-Commerce
+**Setting up an online store on the JAMstack has never been easier
+
+**Search
+**Rely on third party services to integrate a search functionality
+
+[See more static services](https://github.com/agarrharr/awesome-static-website-services#e-commerce)
+
+### CMS
+
+JAMstack sites can also be controlled via a Content Management System, these are typically known as Headless CMS. Once a change in the CMS is made, a new build of your site will be triggered and then deployed as static assets.
+
+- [Netlify CMS](https://www.netlifycms.org/)
+- [Contentful](http://contentful.com/)
+- [Headless WordPress](https://developer.wordpress.org/rest-api/)
+- [Ghost](https://docs.ghost.org/api/content/)
+- [Strapi](https://strapi.io/)
+
+[See more CMS services](https://headlesscms.org/)
+
+## About
+
+This project was put together by [@peduarte](https://twitter.com/peduarte) and presented at the [JAMstack meetup](https://www.meetup.com/JAMstack-London/events/257961818/) ([decks here](https://speakerdeck.com/peduarte/jamstack-cheatsheet)) in London.
+
+The goal of this guide is to gather the concept of JAMstack in a straight-forward guide to encourage other developers to adopt the workflow.
+
+Source: [https://jamstack.wtf](https://jamstack.wtf)
+
+Thanks for reading ✌️

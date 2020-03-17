@@ -13,6 +13,7 @@ export const GlobalStyles = createGlobalStyle(
       backgroundColor: theme.colors.black,
       color: theme.colors.white,
       fontFamily: theme.fonts.normal,
+      margin: 0,
     },
 
     '&::selection': {
@@ -33,6 +34,7 @@ function App({ Component, pageProps }: AppProps) {
           // h1: props => <Radix.Heading size={5} mb={6} sx={{ fontWeight: 500 }} {...props} as="h1" />,
           h2: props => (
             <Primitives.Text
+              mt={5}
               mb={3}
               mx="auto"
               sx={{
@@ -47,11 +49,12 @@ function App({ Component, pageProps }: AppProps) {
           ),
           h3: props => (
             <Primitives.Text
-              mb={3}
+              mt={5}
+              mb={2}
               mx="auto"
               sx={{
                 fontFamily: 'normal',
-                fontSize: 2,
+                fontSize: 1,
                 fontWeight: 600,
                 lineHeight: 2,
               }}
@@ -61,6 +64,7 @@ function App({ Component, pageProps }: AppProps) {
           ),
           h4: props => (
             <Primitives.Text
+              mt={4}
               mb={2}
               mx="auto"
               sx={{
@@ -105,14 +109,24 @@ function App({ Component, pageProps }: AppProps) {
             </li>
           ),
           // strong: props => <Radix.Text {...props} sx={{ ...props.sx, fontWeight: 500 }} />,
-          // img: ({ ...props }) => (
-          //   <Box display="inline-block" mx={-7} my={3}>
-          //     <img style={{ maxWidth: '100%', verticalAlign: 'middle' }} {...props} />
-          //   </Box>
-          // ),
-          // blockquote: props => (
-          //   <Box my={5} pl={6} sx={{ borderLeft: theme => `2px solid ${theme.colors.gray300}`, color: 'gray300' }} {...props} />
-          // ),
+          img: ({ ...props }) => (
+            <Primitives.Box mx={[-3, -4]} my={3} sx={{ display: 'inline-block' }}>
+              <img style={{ maxWidth: '100%', verticalAlign: 'middle' }} {...props} />
+            </Primitives.Box>
+          ),
+          iframe: ({ ...props }) => (
+            <Primitives.Box mb={3}>
+              <iframe {...props} />
+            </Primitives.Box>
+          ),
+          blockquote: props => (
+            <Primitives.Box
+              my={3}
+              pl={3}
+              sx={{ fontSize: 0, borderLeft: theme => `2px solid ${theme.colors.gray}`, color: 'gray' }}
+              {...props}
+            />
+          ),
         }}
       >
         <Head>
