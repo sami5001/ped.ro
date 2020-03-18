@@ -114,7 +114,7 @@ function App({ Component, pageProps }: AppProps) {
           ),
           // strong: props => <Radix.Text {...props} sx={{ ...props.sx, fontWeight: 500 }} />,
           img: ({ ...props }) => (
-            <Primitives.Box mx={[-3, -4]} my={3} sx={{ display: 'inline-block' }}>
+            <Primitives.Box as="span" mx={[-2, -4]} my={3} sx={{ display: 'inline-block' }}>
               <img style={{ maxWidth: '100%', verticalAlign: 'middle' }} {...props} />
             </Primitives.Box>
           ),

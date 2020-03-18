@@ -20,7 +20,7 @@ export default (frontMatter: FrontMatter) => {
       <React.Fragment>
         <TitleAndMetaTags title={frontMatter.title} />
 
-        <Container px={[3, 5]} py={6} sx={{ maxWidth: 720 }}>
+        <Container px={[2, 3]} py={6} sx={{ maxWidth: 720 }}>
           <NextLink href="/" passHref>
             <Link sx={{ position: 'absolute', top: 3, lineHeight: 2, ':hover': { color: 'red' } }}>↞ ped.ro</Link>
           </NextLink>
@@ -29,8 +29,8 @@ export default (frontMatter: FrontMatter) => {
             as="h1"
             sx={{
               fontFamily: 'normal',
-              fontSize: 4,
-              lineHeight: 4,
+              fontSize: [3, 4],
+              lineHeight: [3, 4],
               fontWeight: 600,
             }}
           >
@@ -38,7 +38,7 @@ export default (frontMatter: FrontMatter) => {
           </Text>
 
           <Text
-            mt={2}
+            mt={[1, 2]}
             mx="auto"
             sx={{
               display: 'block',
