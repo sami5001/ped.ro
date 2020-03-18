@@ -11,7 +11,7 @@ const Home = () => {
     <Box>
       <TitleAndMetaTags />
 
-      <Container px={[3, 5]} py={6} sx={{ maxWidth: 720 }}>
+      <Container px={[2, 3]} py={6} sx={{ maxWidth: 720 }}>
         <Text
           as="h1"
           sx={{
@@ -59,7 +59,7 @@ const Home = () => {
           >
             Modulz
           </Link>{' '}
-          to help close the gap between design—development.
+          to help close the gap between design—dev.
         </Text>
 
         <Text
