@@ -5,6 +5,7 @@ import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import * as Primitives from '@modulz/primitives';
 import { prismTheme } from '../prismTheme';
 import { theme } from '../data/theme';
+import { useAnalytics } from '../utils/analytics';
 
 // Create global CSS for syntax highlighting
 export const GlobalStyles = createGlobalStyle(
@@ -30,6 +31,7 @@ export const GlobalStyles = createGlobalStyle(
 // const { RadixProvider, Box } = Radix;
 
 function App({ Component, pageProps }: AppProps) {
+  useAnalytics();
   return (
     <ThemeProvider theme={theme}>
       <MDXProvider
