@@ -9,6 +9,7 @@ export const BlogCard = ({ frontMatter }: { frontMatter: FrontMatter }) => {
     <Box mt={3}>
       <NextLink href={frontMatter.__resourcePath.replace('.mdx', '')} passHref>
         <Link
+          title={`Read ${frontMatter.title}`}
           sx={{
             display: 'inline-block',
             lineHeight: 2,
@@ -30,7 +31,7 @@ export const BlogCard = ({ frontMatter }: { frontMatter: FrontMatter }) => {
             mx="auto"
             sx={{
               display: 'block',
-              fontFamily: 'normal',
+              fontFamily: 'mono',
               fontSize: 0,
               fontWeight: 400,
               color: 'gray',

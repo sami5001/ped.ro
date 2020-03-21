@@ -38,11 +38,11 @@ export default (frontMatter: FrontMatter) => {
           </Text>
 
           <Text
-            mt={[1, 2]}
+            mt={1}
             mx="auto"
             sx={{
               display: 'block',
-              fontFamily: 'normal',
+              fontFamily: 'mono',
               fontSize: 0,
               fontWeight: 400,
               color: 'gray',

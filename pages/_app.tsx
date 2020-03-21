@@ -22,7 +22,8 @@ export const GlobalStyles = createGlobalStyle(
     },
 
     '&::selection': {
-      backgroundColor: theme.colors.yellow,
+      backgroundColor: 'hsla(52, 100%, 49%, 0.99)',
+      color: 'black',
     },
   },
   prismTheme
@@ -142,6 +143,7 @@ function App({ Component, pageProps }: AppProps) {
             href="https://fonts.googleapis.com/css?family=Inter:400,500,600,700,800,900&display=swap"
             rel="stylesheet"
           />
+          <link href="https://fonts.googleapis.com/css?family=Fira+Code&display=swap" rel="stylesheet" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         </Head>
 
