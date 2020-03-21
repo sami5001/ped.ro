@@ -37,7 +37,7 @@ function App({ Component, pageProps }: AppProps) {
     <ThemeProvider theme={theme}>
       <MDXProvider
         components={{
-          // ...Radix,
+          ...Primitives,
           // h1: props => <Radix.Heading size={5} mb={6} sx={{ fontWeight: 500 }} {...props} as="h1" />,
           h2: props => (
             <Primitives.Text
