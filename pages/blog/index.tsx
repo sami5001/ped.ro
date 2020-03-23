@@ -1,8 +1,7 @@
 import React from 'react';
 import NextLink from 'next/link';
 import { Container, Box, Text, Link } from '@modulz/primitives';
-// @ts-ignore
-import { frontMatter as blogPosts } from './**/*.mdx';
+import { blogPosts } from '../../utils/blogPosts';
 import { FrontMatter } from '../../types';
 import TitleAndMetaTags from '../../components/TitleAndMetaTags';
 import { BlogCard } from '../../components/BlogCard';
@@ -28,11 +27,9 @@ const Blog = () => {
           Blog
         </Text>
 
-        {blogPosts
-          .sort((a, b) => Number(new Date(b.publishedAt)) - Number(new Date(a.publishedAt)))
-          .map((post: FrontMatter) => (
-            <BlogCard key={post.title} frontMatter={post} />
-          ))}
+        {blogPosts.map((post: FrontMatter) => (
+          <BlogCard key={post.title} frontMatter={post} />
+        ))}
       </Container>
     </Box>
   );

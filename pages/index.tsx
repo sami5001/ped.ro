@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container, Box, Text, Link } from '@modulz/primitives';
-// @ts-ignore
-import { frontMatter as blogPosts } from './blog/**/*.mdx';
+import { blogPosts } from '../utils/blogPosts';
 import { FrontMatter } from '../types';
 import TitleAndMetaTags from '../components/TitleAndMetaTags';
 import { BlogCard } from '../components/BlogCard';
@@ -126,11 +125,9 @@ const Home = () => {
           Writing
         </Text>
 
-        {blogPosts
-          .sort((a, b) => Number(new Date(b.publishedAt)) - Number(new Date(a.publishedAt)))
-          .map((post: FrontMatter) => (
-            <BlogCard key={post.title} frontMatter={post} />
-          ))}
+        {blogPosts.map((post: FrontMatter) => (
+          <BlogCard key={post.title} frontMatter={post} />
+        ))}
       </Container>
     </Box>
   );

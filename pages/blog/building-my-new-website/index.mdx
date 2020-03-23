@@ -1,0 +1,31 @@
+---
+title: 'Building my new website'
+publishedAt: '2020-03-21'
+draft: true
+---
+
+I'd like to talk about the reasons behind this choice and use this opportunity to showcase the entire process, from prototyping to design system to dynamic functionalities.
+
+---
+
+## Prototyping
+
+I used [CodeSandbox](https://codesandbox.com) as a way to get up and running fast. To build the UI without having to worry about creating custom components and custom styling choice, I used our own `Primitives` library. That was super helpful because every primitive available supports an `sx` prop.
+
+```js
+<Box sx={{ bg: 'red' }}>
+  <Text sx={{ fontSize: 1, color: 'white' }}>Hello, world</Text>
+</Box>
+```
+
+<Box mx={[-2, -4]}>
+
+<iframe
+  src="https://codesandbox.io/embed/pedro-prototype-s1z6r?fontsize=14&hidenavigation=1&theme=dark&runonclick=1&view=editor"
+  style={{ width:'100%', height:'500px', border:'0', borderRadius:' 4px', overflow:'hidden', }}
+  title="Ped.ro Prototype"
+  allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
+  sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+></iframe>
+
+</Box>
