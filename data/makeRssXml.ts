@@ -28,7 +28,7 @@ type MakeItemsRssProps = { baseUrl: string; frontMatters: FrontMatter[] };
 const makeItemsRss = ({ baseUrl, frontMatters }: MakeItemsRssProps) => {
   let rssItemsXml = '';
 
-  frontMatters.forEach(frontMatter => {
+  frontMatters.forEach((frontMatter) => {
     rssItemsXml += `
 			<item>
 				<title>${frontMatter.title}</title>

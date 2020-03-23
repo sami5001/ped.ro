@@ -39,7 +39,7 @@ function App({ Component, pageProps }: AppProps) {
         components={{
           ...Primitives,
           // h1: props => <Radix.Heading size={5} mb={6} sx={{ fontWeight: 500 }} {...props} as="h1" />,
-          h2: props => (
+          h2: (props) => (
             <Primitives.Text
               mt={5}
               mb={3}
@@ -54,7 +54,7 @@ function App({ Component, pageProps }: AppProps) {
               as="h2"
             />
           ),
-          h3: props => (
+          h3: (props) => (
             <Primitives.Text
               mt={5}
               mb={2}
@@ -69,7 +69,7 @@ function App({ Component, pageProps }: AppProps) {
               as="h3"
             />
           ),
-          h4: props => (
+          h4: (props) => (
             <Primitives.Text
               mt={4}
               mb={2}
@@ -84,8 +84,8 @@ function App({ Component, pageProps }: AppProps) {
               as="h4"
             />
           ),
-          p: props => <Primitives.Text mb={3} {...props} sx={{ fontSize: 1, lineHeight: 2, ...props.sx }} as="p" />,
-          a: props => (
+          p: (props) => <Primitives.Text mb={3} {...props} sx={{ fontSize: 1, lineHeight: 2, ...props.sx }} as="p" />,
+          a: (props) => (
             <Primitives.Link
               sx={{
                 textDecoration: 'underline',
@@ -94,8 +94,8 @@ function App({ Component, pageProps }: AppProps) {
               {...props}
             />
           ),
-          hr: props => <Primitives.Divider my={4} mx="auto" sx={{ width: 3, bg: 'gray' }} {...props} />,
-          inlineCode: props => (
+          hr: (props) => <Primitives.Divider my={4} mx="auto" sx={{ width: 3, bg: 'gray' }} {...props} />,
+          inlineCode: (props) => (
             <Primitives.Code
               sx={{
                 bg: 'gray',
@@ -108,9 +108,9 @@ function App({ Component, pageProps }: AppProps) {
               {...props}
             />
           ),
-          ul: props => <Primitives.Box mb={3} {...props} as="ul" />,
-          ol: props => <Primitives.Box mb={3} {...props} as="ol" />,
-          li: props => (
+          ul: (props) => <Primitives.Box mb={3} {...props} as="ul" />,
+          ol: (props) => <Primitives.Box mb={3} {...props} as="ol" />,
+          li: (props) => (
             <li>
               <Primitives.Text {...props} sx={{ fontSize: 1, lineHeight: 2, ...props.sx }} />
             </li>
@@ -126,11 +126,11 @@ function App({ Component, pageProps }: AppProps) {
               <iframe {...props} />
             </Primitives.Box>
           ),
-          blockquote: props => (
+          blockquote: (props) => (
             <Primitives.Box
               my={3}
               pl={3}
-              sx={{ fontSize: 0, borderLeft: theme => `2px solid ${theme.colors.gray}`, color: 'gray' }}
+              sx={{ fontSize: 0, borderLeft: (theme) => `2px solid ${theme.colors.gray}`, color: 'gray' }}
               {...props}
             />
           ),
