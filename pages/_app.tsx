@@ -41,7 +41,7 @@ function App({ Component, pageProps }: AppProps) {
           h4: (props) => <Wallop.Text size={3} mt={5} mb={3} mx="auto" sx={{ fontWeight: 600 }} {...props} as="h4" />,
           p: (props) => <Wallop.Text mb={4} {...props} size={3} as="p" />,
           a: (props) => <Wallop.Link {...props} />,
-          hr: (props) => <Wallop.Divider my={5} mx="auto" sx={{ width: 3, bg: 'gray' }} {...props} />,
+          hr: (props) => <Wallop.Divider my={5} mx="auto" {...props} />,
           inlineCode: (props) => <Wallop.Code {...props} />,
           ul: (props) => <Wallop.Box mb={4} {...props} as="ul" />,
           ol: (props) => <Wallop.Box mb={4} {...props} as="ol" />,
