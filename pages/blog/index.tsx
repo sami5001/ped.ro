@@ -1,6 +1,6 @@
 import React from 'react';
 import NextLink from 'next/link';
-import { Container, Box, Text, Link } from '@modulz/primitives';
+import { Container, Box, Text, Link } from '@peduarte/wallop-system';
 import { blogPosts } from '../../utils/blogPosts';
 import { FrontMatter } from '../../types';
 import TitleAndMetaTags from '../../components/TitleAndMetaTags';
@@ -11,19 +11,12 @@ const Blog = () => {
     <Box>
       <TitleAndMetaTags />
 
-      <Container px={[3, 5]} py={6} sx={{ maxWidth: 720 }}>
+      <Container px={[3, 6]} py={7}>
         <NextLink href="/" passHref>
-          <Link sx={{ position: 'absolute', top: 3, lineHeight: 2, ':hover': { color: 'red' } }}>↞ ped.ro</Link>
+          <Link sx={{ position: 'absolute', top: 4 }}>↞ ped.ro</Link>
         </NextLink>
 
-        <Text
-          as="h1"
-          sx={{
-            fontFamily: 'sans',
-            fontSize: 4,
-            fontWeight: 600,
-          }}
-        >
+        <Text as="h1" size={5} sx={{ fontWeight: 600 }}>
           Blog
         </Text>
 
