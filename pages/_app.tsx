@@ -1,11 +1,12 @@
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 import { MDXProvider } from '@mdx-js/react';
-import { ThemeProvider, createGlobalStyle } from 'styled-components';
-import * as Primitives from '@modulz/primitives';
+import { createGlobalStyle } from 'styled-components';
+import * as Wallop from '@peduarte/wallop-system';
 import { prismTheme } from '../prismTheme';
-import { theme } from '../data/theme';
 import { useAnalytics } from '../utils/analytics';
+
+const theme = Wallop.theme;
 
 // Create global CSS for syntax highlighting
 export const GlobalStyles = createGlobalStyle(
@@ -13,12 +14,8 @@ export const GlobalStyles = createGlobalStyle(
     body: {
       backgroundColor: theme.colors.black,
       color: theme.colors.white,
-      fontFamily: theme.fonts.normal,
+      fontFamily: theme.fonts.sans,
       margin: 0,
-    },
-
-    a: {
-      transition: 'all 100ms ease-in-out',
     },
 
     '&::selection': {
@@ -34,102 +31,40 @@ export const GlobalStyles = createGlobalStyle(
 function App({ Component, pageProps }: AppProps) {
   useAnalytics();
   return (
-    <ThemeProvider theme={theme}>
+    <Wallop.WallopProvider>
       <MDXProvider
         components={{
-          ...Primitives,
-          // h1: props => <Radix.Heading size={5} mb={6} sx={{ fontWeight: 500 }} {...props} as="h1" />,
-          h2: (props) => (
-            <Primitives.Text
-              mt={5}
-              mb={3}
-              mx="auto"
-              sx={{
-                fontFamily: 'normal',
-                fontSize: 2,
-                fontWeight: 600,
-                lineHeight: 2,
-              }}
-              {...props}
-              as="h2"
-            />
-          ),
-          h3: (props) => (
-            <Primitives.Text
-              mt={5}
-              mb={2}
-              mx="auto"
-              sx={{
-                fontFamily: 'normal',
-                fontSize: 1,
-                fontWeight: 600,
-                lineHeight: 2,
-              }}
-              {...props}
-              as="h3"
-            />
-          ),
-          h4: (props) => (
-            <Primitives.Text
-              mt={4}
-              mb={2}
-              mx="auto"
-              sx={{
-                fontFamily: 'normal',
-                fontSize: 1,
-                fontWeight: 600,
-                lineHeight: 1,
-              }}
-              {...props}
-              as="h4"
-            />
-          ),
-          p: (props) => <Primitives.Text mb={3} {...props} sx={{ fontSize: 1, lineHeight: 2, ...props.sx }} as="p" />,
-          a: (props) => (
-            <Primitives.Link
-              sx={{
-                textDecoration: 'underline',
-                ':hover': { color: 'red' },
-              }}
-              {...props}
-            />
-          ),
-          hr: (props) => <Primitives.Divider my={4} mx="auto" sx={{ width: 3, bg: 'gray' }} {...props} />,
-          inlineCode: (props) => (
-            <Primitives.Code
-              sx={{
-                bg: 'gray',
-                fontSize: 0,
-                padding: '2px 5px',
-                borderRadius: 1,
-                fontFamily: 'mono',
-                verticalAlign: 'middle',
-              }}
-              {...props}
-            />
-          ),
-          ul: (props) => <Primitives.Box mb={3} {...props} as="ul" />,
-          ol: (props) => <Primitives.Box mb={3} {...props} as="ol" />,
+          ...Wallop,
+          h1: (props) => <Wallop.Text size={7} mb={7} sx={{ fontWeight: 500 }} {...props} as="h1" />,
+          h2: (props) => <Wallop.Text size={4} mt={6} mb={4} mx="auto" sx={{ fontWeight: 600 }} {...props} as="h2" />,
+          h3: (props) => <Wallop.Text size={3} mt={6} mb={3} mx="auto" sx={{ fontWeight: 600 }} {...props} as="h3" />,
+          h4: (props) => <Wallop.Text size={3} mt={5} mb={3} mx="auto" sx={{ fontWeight: 600 }} {...props} as="h4" />,
+          p: (props) => <Wallop.Text mb={4} {...props} size={3} as="p" />,
+          a: (props) => <Wallop.Link {...props} />,
+          hr: (props) => <Wallop.Divider my={5} mx="auto" sx={{ width: 3, bg: 'gray' }} {...props} />,
+          inlineCode: (props) => <Wallop.Code {...props} />,
+          ul: (props) => <Wallop.Box mb={4} {...props} as="ul" />,
+          ol: (props) => <Wallop.Box mb={4} {...props} as="ol" />,
           li: (props) => (
             <li>
-              <Primitives.Text {...props} sx={{ fontSize: 1, lineHeight: 2, ...props.sx }} />
+              <Wallop.Text {...props} size={3} />
             </li>
           ),
-          // strong: props => <Radix.Text {...props} sx={{ ...props.sx, fontWeight: 500 }} />,
+          strong: (props) => <Wallop.Text {...props} sx={{ ...props.sx, fontWeight: 600 }} />,
           img: ({ ...props }) => (
-            <Primitives.Box as="span" mx={[-2, -4]} my={3} sx={{ display: 'inline-block' }}>
+            <Wallop.Box as="span" mx={[-3, -5]} my={4} sx={{ display: 'inline-block' }}>
               <img style={{ maxWidth: '100%', verticalAlign: 'middle' }} {...props} />
-            </Primitives.Box>
+            </Wallop.Box>
           ),
           iframe: ({ ...props }) => (
-            <Primitives.Box mb={3}>
+            <Wallop.Box mb={4}>
               <iframe {...props} />
-            </Primitives.Box>
+            </Wallop.Box>
           ),
           blockquote: (props) => (
-            <Primitives.Box
-              my={3}
-              pl={3}
+            <Wallop.Box
+              my={4}
+              pl={4}
               sx={{ fontSize: 0, borderLeft: (theme) => `2px solid ${theme.colors.gray}`, color: 'gray' }}
               {...props}
             />
@@ -151,7 +86,7 @@ function App({ Component, pageProps }: AppProps) {
 
         <Component {...pageProps} />
       </MDXProvider>
-    </ThemeProvider>
+    </Wallop.WallopProvider>
   );
 }
 

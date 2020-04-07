@@ -19,7 +19,7 @@ const Blog = () => {
         <Text
           as="h1"
           sx={{
-            fontFamily: 'normal',
+            fontFamily: 'sans',
             fontSize: 4,
             fontWeight: 600,
           }}

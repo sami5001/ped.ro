@@ -2,7 +2,7 @@ import React from 'react';
 import NextLink from 'next/link';
 import { useRouter } from 'next/router';
 import { parseISO, format } from 'date-fns';
-import { Container, Text, Box, Link, Divider } from '@modulz/primitives';
+import { Container, Text, Box, Link, Divider } from '@peduarte/wallop-system';
 import { FrontMatter } from '../types';
 import TitleAndMetaTags from '../components/TitleAndMetaTags';
 
@@ -20,53 +20,25 @@ export default (frontMatter: FrontMatter) => {
       <React.Fragment>
         <TitleAndMetaTags title={frontMatter.title} />
 
-        <Container px={[2, 3]} py={6} sx={{ maxWidth: 720 }}>
+        <Container px={[3, 6]} py={7}>
           <NextLink href="/" passHref>
-            <Link sx={{ position: 'absolute', top: 3, lineHeight: 2, ':hover': { color: 'red' } }}>↞ ped.ro</Link>
+            <Link sx={{ position: 'absolute', top: 4 }}>↞ ped.ro</Link>
           </NextLink>
 
-          <Text
-            as="h1"
-            sx={{
-              fontFamily: 'normal',
-              fontSize: [3, 4],
-              lineHeight: [3, 4],
-              fontWeight: 600,
-            }}
-          >
+          <Text as="h1" size={5} sx={{ fontWeight: 600 }}>
             {frontMatter.title}
           </Text>
 
-          <Text
-            mt={1}
-            mx="auto"
-            sx={{
-              display: 'block',
-              fontFamily: 'mono',
-              fontSize: 0,
-              fontWeight: 400,
-              color: 'gray',
-            }}
-          >
+          <Text as="time" mt={1} mx="auto" size={2} sx={{ color: 'gray' }}>
             {format(parseISO(frontMatter.publishedAt), 'MMMM dd, yyyy')} — {frontMatter.readingTime.text}
           </Text>
 
-          <Box my={4}>{children}</Box>
+          <Box my={5}>{children}</Box>
 
-          <Divider my={4} mx="auto" sx={{ width: 3, bg: 'gray' }} />
+          <Divider my={5} mx="auto" sx={{ width: 3, bg: 'gray' }} />
 
           <Box sx={{ textAlign: 'center' }}>
-            <Text
-              as="p"
-              mt={3}
-              mx="auto"
-              sx={{
-                fontFamily: 'normal',
-                fontSize: 1,
-                fontWeight: 400,
-                lineHeight: 2,
-              }}
-            >
+            <Text as="p" mt={4} mx="auto" size={2}>
               Share this post on{' '}
               <Link
                 href={twitterShare}

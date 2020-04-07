@@ -1,5 +1,5 @@
 import { css } from 'styled-components';
-import { theme } from './data/theme';
+import { theme } from '@peduarte/wallop-system';
 
 export const prismTheme = css`
   code[class*='language-'],
