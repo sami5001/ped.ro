@@ -22,7 +22,7 @@ const Blog = () => {
           </NextLink>
         </Box>
 
-        <Text as="h1" size={5} weight="medium">
+        <Text as="h1" mx="auto" size={5} mb={5} weight="medium">
           Blog
         </Text>
 

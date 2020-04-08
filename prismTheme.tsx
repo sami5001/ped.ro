@@ -7,13 +7,13 @@ export const prismTheme = css`
     color: ${theme.colors.white};
     background: none;
     font-family: ${theme.fonts.mono};
-    font-size: ${theme.fontSizes[2]};
+    font-size: ${theme.fontSizes[3]};
     text-align: left;
     white-space: pre;
     word-spacing: normal;
     word-break: normal;
     word-wrap: normal;
-    line-height: ${theme.lineHeights[2]};
+    line-height: ${theme.lineHeights[3]};
 
     -moz-tab-size: 4;
     -o-tab-size: 4;
@@ -27,11 +27,11 @@ export const prismTheme = css`
 
   /* Code blocks */
   pre[class*='language-'] {
-    padding-top: ${theme.space[2]};
-    padding-bottom: ${theme.space[2]};
-    padding-left: ${theme.space[2]};
-    padding-right: ${theme.space[2]};
-    margin: ${theme.space[2]} 0;
+    padding-top: ${theme.space[3]};
+    padding-bottom: ${theme.space[3]};
+    padding-left: ${theme.space[3]};
+    padding-right: ${theme.space[3]};
+    margin: ${theme.space[3]} 0;
     overflow: auto;
     min-width: 100%;
   }
@@ -49,6 +49,8 @@ export const prismTheme = css`
     white-space: normal;
   }
 
+
+
   .token.comment,
   .token.prolog,
   .token.doctype,
@@ -58,7 +60,8 @@ export const prismTheme = css`
 
   .token.punctuation {
     /* color: #999; */
-		/* color: ${theme.colors.yellow}; */
+		color: ${theme.colors.gray};
+
   }
 
   .token.namespace {
@@ -73,6 +76,7 @@ export const prismTheme = css`
   .token.symbol,
   .token.deleted {
     /* color: #905; */
+		/* color: ${theme.colors.gray}; */
   }
 
   .token.selector,
@@ -82,6 +86,7 @@ export const prismTheme = css`
   .token.builtin,
   .token.inserted {
     /* color: #690; */
+		/* color: ${theme.colors.gray}; */
   }
 
   .token.operator,
@@ -89,7 +94,7 @@ export const prismTheme = css`
   .token.url,
   .language-css .token.string,
   .style .token.string {
-    color: #9a6e3a;
+    /* color: #9a6e3a; */
     /* color: ${theme.colors.yellow}; */
     /* background: hsla(0, 0%, 100%, 0.5); */
   }
@@ -102,13 +107,13 @@ export const prismTheme = css`
 
   .token.function,
   .token.class-name {
-    color: #dd4a68;
+    /* color: #dd4a68; */
   }
 
   .token.regex,
   .token.important,
   .token.variable {
-    color: #e90;
+    /* color: #e90; */
   }
 
   .token.important,
@@ -128,10 +133,10 @@ export const prismTheme = css`
     display: block;
 
     /* Reset padding originally set in "pre[class*='language-']" */
-    margin-left: -${theme.space[2]};
-    margin-right: -${theme.space[2]};
-    padding-left: ${theme.space[2]};
-    padding-right: ${theme.space[2]};
+    margin-left: -${theme.space[3]};
+    margin-right: -${theme.space[3]};
+    padding-left: ${theme.space[3]};
+    padding-right: ${theme.space[3]};
 
     background-color: rgba(255, 255, 255, 0.1);
     box-shadow: inset 2px 0px 0 0px ${theme.colors.blue};

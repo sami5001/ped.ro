@@ -2,6 +2,6 @@
 import { frontMatter } from '../pages/blog/**/*.mdx';
 import { FrontMatter } from '../types';
 
-export const blogPosts: FrontMatter[] = frontMatter
-  .filter((post) => !post.draft)
-  .sort((a, b) => Number(new Date(b.publishedAt)) - Number(new Date(a.publishedAt)));
+export const blogPosts: FrontMatter[] = frontMatter.sort(
+  (a, b) => Number(new Date(b.publishedAt)) - Number(new Date(a.publishedAt))
+);

@@ -2,7 +2,7 @@ import React from 'react';
 import NextLink from 'next/link';
 import { useRouter } from 'next/router';
 import { parseISO, format } from 'date-fns';
-import { Container, Text, Box, Link, Divider } from '@peduarte/wallop-system';
+import { Container, Text, Box, Link, Divider, Badge, Tooltip } from '@peduarte/wallop-system';
 import { FrontMatter } from '../types';
 import TitleAndMetaTags from '../components/TitleAndMetaTags';
 
@@ -32,7 +32,14 @@ export default (frontMatter: FrontMatter) => {
           </Box>
 
           <Text as="h1" size={5} weight="medium">
-            {frontMatter.title}
+            {frontMatter.title}{' '}
+            {frontMatter.draft && (
+              <Tooltip label="This article is work in progress" side="top" align="center">
+                <Badge variant="white" ml={1} mt="-1px">
+                  Draft
+                </Badge>
+              </Tooltip>
+            )}
           </Text>
 
           <Text as="time" mt={1} mx="auto" size={2} sx={{ fontFamily: 'mono', color: 'gray' }}>
@@ -41,7 +48,7 @@ export default (frontMatter: FrontMatter) => {
 
           <Box my={5}>{children}</Box>
 
-          <Divider my={5} mx="auto" size="small" />
+          <Divider my={5} mx="auto" size={1} />
 
           <Box sx={{ textAlign: 'center' }}>
             <Text as="p" mt={4} mx="auto" size={2}>
