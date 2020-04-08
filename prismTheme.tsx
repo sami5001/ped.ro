@@ -7,7 +7,7 @@ export const prismTheme = css`
     color: ${theme.colors.white};
     background: none;
     font-family: ${theme.fonts.mono};
-    font-size: ${theme.fontSizes[0]};
+    font-size: ${theme.fontSizes[2]};
     text-align: left;
     white-space: pre;
     word-spacing: normal;
@@ -27,11 +27,11 @@ export const prismTheme = css`
 
   /* Code blocks */
   pre[class*='language-'] {
-    padding-top: ${theme.space[1]};
-    padding-bottom: ${theme.space[1]};
-    padding-left: ${theme.space[1]};
-    padding-right: ${theme.space[1]};
-    margin: ${theme.space[1]} 0;
+    padding-top: ${theme.space[2]};
+    padding-bottom: ${theme.space[2]};
+    padding-left: ${theme.space[2]};
+    padding-right: ${theme.space[2]};
+    margin: ${theme.space[2]} 0;
     overflow: auto;
     min-width: 100%;
   }
@@ -57,7 +57,8 @@ export const prismTheme = css`
   }
 
   .token.punctuation {
-    color: #999;
+    /* color: #999; */
+		/* color: ${theme.colors.yellow}; */
   }
 
   .token.namespace {
@@ -89,6 +90,7 @@ export const prismTheme = css`
   .language-css .token.string,
   .style .token.string {
     color: #9a6e3a;
+    /* color: ${theme.colors.yellow}; */
     /* background: hsla(0, 0%, 100%, 0.5); */
   }
 
@@ -126,10 +128,10 @@ export const prismTheme = css`
     display: block;
 
     /* Reset padding originally set in "pre[class*='language-']" */
-    margin-left: -${theme.space[1]};
-    margin-right: -${theme.space[1]};
-    padding-left: ${theme.space[1]};
-    padding-right: ${theme.space[1]};
+    margin-left: -${theme.space[2]};
+    margin-right: -${theme.space[2]};
+    padding-left: ${theme.space[2]};
+    padding-right: ${theme.space[2]};
 
     background-color: rgba(255, 255, 255, 0.1);
     box-shadow: inset 2px 0px 0 0px ${theme.colors.blue};

@@ -11,14 +11,18 @@ const Blog = () => {
     <Box>
       <TitleAndMetaTags />
 
-      <Container px={[3, 6]} py={7}>
-        <NextLink href="/" passHref>
-          <Link variant="ghost" sx={{ position: 'absolute', top: 4 }}>
-            ↞ ped.ro
-          </Link>
-        </NextLink>
+      <Container mx={[4, 5, 6]} py={[4, 5]}>
+        <Box mb={[5, 6]}>
+          <NextLink href="/" passHref>
+            <Link variant="ghost">
+              <Text size={2} sx={{ textTransform: 'uppercase' }}>
+                Back <Text sx={{ color: 'gray' }}>home</Text>
+              </Text>
+            </Link>
+          </NextLink>
+        </Box>
 
-        <Text as="h1" size={5} weight="bold">
+        <Text as="h1" size={5} weight="medium">
           Blog
         </Text>
 

@@ -26,8 +26,6 @@ export const GlobalStyles = createGlobalStyle(
   prismTheme
 );
 
-// const { RadixProvider, Box } = Radix;
-
 function App({ Component, pageProps }: AppProps) {
   useAnalytics();
   return (
@@ -39,10 +37,10 @@ function App({ Component, pageProps }: AppProps) {
           h2: (props) => <Wallop.Text size={4} mt={6} mb={4} mx="auto" weight="bold" {...props} as="h2" />,
           h3: (props) => <Wallop.Text size={3} mt={6} mb={3} mx="auto" weight="bold" {...props} as="h3" />,
           h4: (props) => <Wallop.Text size={3} mt={5} mb={3} mx="auto" weight="bold" {...props} as="h4" />,
-          p: (props) => <Wallop.Text mb={4} {...props} size={3} as="p" />,
+          p: (props) => <Wallop.Text mb={4} {...props} size={4} as="p" />,
           a: (props) => <Wallop.Link {...props} />,
-          hr: (props) => <Wallop.Divider my={5} mx="auto" {...props} />,
-          inlineCode: (props) => <Wallop.Code {...props} />,
+          hr: (props) => <Wallop.Divider my={5} mx="auto" size="small" {...props} />,
+          inlineCode: (props) => <Wallop.Code {...props} sx={{ color: 'black' }} />,
           ul: (props) => <Wallop.Box mb={4} {...props} as="ul" />,
           ol: (props) => <Wallop.Box mb={4} {...props} as="ol" />,
           li: (props) => (

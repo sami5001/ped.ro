@@ -16,10 +16,9 @@ export const BlogCard = ({ frontMatter }: { frontMatter: FrontMatter }) => {
             lineHeight: 3,
           }}
         >
-          <Text size={3}>{frontMatter.title}</Text>
+          <Text size={4}>{frontMatter.title}</Text>
           <Text
             as="time"
-            mx="auto"
             size={2}
             sx={{
               fontFamily: 'mono',
