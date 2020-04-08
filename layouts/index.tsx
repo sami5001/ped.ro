@@ -22,14 +22,16 @@ export default (frontMatter: FrontMatter) => {
 
         <Container px={[3, 6]} py={7}>
           <NextLink href="/" passHref>
-            <Link sx={{ position: 'absolute', top: 4 }}>↞ ped.ro</Link>
+            <Link variant="ghost" sx={{ position: 'absolute', top: 4 }}>
+              ↞ ped.ro
+            </Link>
           </NextLink>
 
-          <Text as="h1" size={5} sx={{ fontWeight: 600 }}>
+          <Text as="h1" size={5} weight="bold">
             {frontMatter.title}
           </Text>
 
-          <Text as="time" mt={1} mx="auto" size={2} sx={{ color: 'gray' }}>
+          <Text as="time" mt={1} mx="auto" size={2} sx={{ fontFamily: 'mono', color: 'gray' }}>
             {format(parseISO(frontMatter.publishedAt), 'MMMM dd, yyyy')} — {frontMatter.readingTime.text}
           </Text>
 
@@ -40,17 +42,7 @@ export default (frontMatter: FrontMatter) => {
           <Box sx={{ textAlign: 'center' }}>
             <Text as="p" mt={4} mx="auto" size={2}>
               Share this post on{' '}
-              <Link
-                href={twitterShare}
-                target="_blank"
-                title="Share this post on Twitter"
-                sx={{
-                  display: 'inline-block',
-                  textDecoration: 'underline',
-                  lineHeight: 2,
-                  ':hover': { color: 'twitter' },
-                }}
-              >
+              <Link href={twitterShare} target="_blank" title="Share this post on Twitter" variant="twitter">
                 Twitter
               </Link>
             </Text>

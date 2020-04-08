@@ -13,10 +13,12 @@ const Blog = () => {
 
       <Container px={[3, 6]} py={7}>
         <NextLink href="/" passHref>
-          <Link sx={{ position: 'absolute', top: 4 }}>↞ ped.ro</Link>
+          <Link variant="ghost" sx={{ position: 'absolute', top: 4 }}>
+            ↞ ped.ro
+          </Link>
         </NextLink>
 
-        <Text as="h1" size={5} sx={{ fontWeight: 600 }}>
+        <Text as="h1" size={5} weight="bold">
           Blog
         </Text>
 

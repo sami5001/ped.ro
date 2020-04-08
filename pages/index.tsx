@@ -11,7 +11,7 @@ const Home = () => {
       <TitleAndMetaTags />
 
       <Container px={[3, 6]} py={7}>
-        <Text as="h1" size={6} sx={{ fontWeight: 600 }}>
+        <Text as="h1" size={6} weight="bold">
           Pedro Duarte
         </Text>
 
@@ -21,7 +21,7 @@ const Home = () => {
 
         <Text as="p" mt={4} mx="auto" size={3}>
           Right now I'm working with{' '}
-          <Link href="https://modulz.app" target="_blank">
+          <Link variant="blue" href="https://modulz.app" target="_blank">
             Modulz
           </Link>{' '}
           to help close the gap between design—dev.
@@ -33,7 +33,7 @@ const Home = () => {
 
         <Text as="p" mt={4} mx="auto" size={3}>
           You can find me on{' '}
-          <Link href="https://twitter.com/peduarte" target="_blank">
+          <Link variant="twitter" href="https://twitter.com/peduarte" target="_blank">
             Twitter
           </Link>{' '}
           or{' '}
@@ -43,7 +43,7 @@ const Home = () => {
           .
         </Text>
 
-        <Text as="h3" mt={6} mx="auto" size={4} sx={{ fontWeight: 600 }}>
+        <Text as="h3" mt={6} mx="auto" size={4} weight="bold">
           Writing
         </Text>
 
