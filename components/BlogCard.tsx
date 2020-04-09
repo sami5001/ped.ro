@@ -7,7 +7,7 @@ import { FrontMatter } from '../types';
 export const BlogCard = ({ frontMatter }: { frontMatter: FrontMatter }) => {
   return (
     <Box mt={4}>
-      <NextLink href={frontMatter.__resourcePath.replace('.mdx', '')} passHref>
+      <NextLink href={frontMatter.id} passHref>
         <Link
           aria-label={`Read ${frontMatter.title}`}
           variant="ghost"

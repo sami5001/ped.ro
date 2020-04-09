@@ -1,7 +1,6 @@
 import React from 'react';
 import { NextPageContext } from 'next';
-// @ts-ignore
-import { frontMatter as blogPosts } from './**/*.mdx';
+import { blogPosts } from '../../utils/blogPosts';
 import { makeRssXml } from '../../data/makeRssXml';
 
 export default class Rss extends React.Component {
@@ -15,7 +14,7 @@ export default class Rss extends React.Component {
       makeRssXml({
         baseUrl: 'https://ped.ro/blog',
         title: 'Pedro Duarte — Blog',
-        description: 'Recent articles from the ped.ro',
+        description: 'Recent articles from the ped.ro blog.',
         frontMatters: blogPosts,
       })
     );

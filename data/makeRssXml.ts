@@ -32,7 +32,7 @@ const makeItemsRss = ({ baseUrl, frontMatters }: MakeItemsRssProps) => {
     rssItemsXml += `
 			<item>
 				<title>${frontMatter.title}</title>
-				<link>${baseUrl}/${frontMatter.__resourcePath.replace('.mdx', '')}</link>
+				<link>${baseUrl}/${frontMatter.id}</link>
 				<pubDate>${frontMatter.publishedAt}</pubDate>
 			</item>
 		`;
