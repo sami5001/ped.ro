@@ -45,7 +45,7 @@ const Home = () => {
         </Container>
       </Box>
 
-      <Box p={[4, 5]} sx={{ bg: 'yellow' }}>
+      <Box p={[3, 4, 5]} sx={{ bg: 'yellow' }}>
         <Box mt={[-5, -6]} p={[4, 5]} sx={{ bg: 'black', color: 'white', borderRadius: 1 }}>
           <Text as="h3" mx="auto" size={3} mb={5} weight="medium">
             Writing

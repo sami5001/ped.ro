@@ -6,6 +6,7 @@ import { createGlobalStyle } from 'styled-components';
 import * as Wallop from '@peduarte/wallop-system';
 import { prismTheme } from '../prismTheme';
 import { useAnalytics } from '../utils/analytics';
+import { Footer } from '../components/Footer';
 
 const theme = Wallop.theme;
 
@@ -22,6 +23,8 @@ export const GlobalStyles = createGlobalStyle(
     ul: {
       paddingLeft: theme.space[4],
     },
+
+    figure: { margin: 0 },
 
     svg: { display: 'inline-block', verticalAlign: 'middle' },
 
@@ -98,7 +101,13 @@ function App({ Component, pageProps }: AppProps) {
 
         <GlobalStyles />
 
-        <Component {...pageProps} />
+        <Wallop.Flex sx={{ minHeight: '100vh', flexDirection: 'column' }}>
+          <Wallop.Box sx={{ flex: 1 }}>
+            <Component {...pageProps} />
+          </Wallop.Box>
+
+          <Footer />
+        </Wallop.Flex>
       </MDXProvider>
     </Wallop.WallopProvider>
   );
