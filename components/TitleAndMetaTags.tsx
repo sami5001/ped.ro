@@ -13,9 +13,10 @@ export default function TitleAndMetaTags({
   url = 'https://ped.ro',
   pathname,
   title = 'Pedro Duarte',
-  description = 'UI developer based in Barcelona',
+  description = 'UI developer interested in design systems.',
 }: TitleAndMetaTagsProps) {
   const router = useRouter();
+  const image = 'https://ped.ro/social.png';
   const path = pathname || router.pathname;
 
   return (
@@ -23,10 +24,12 @@ export default function TitleAndMetaTags({
       <title>{title}</title>
 
       <meta property="og:url" content={`${url}${path}`} />
+      <meta property="og:image" content={image} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
 
       <meta name="twitter:url" content={`${url}${path}`} />
+      <meta name="twitter:title" content={title} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:site" content="@peduarte" />
