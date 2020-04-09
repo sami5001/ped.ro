@@ -48,10 +48,10 @@ export default (frontMatter: FrontMatter) => {
 
           <Box my={5}>{children}</Box>
 
-          <Divider mt={6} mb={5} mx="auto" size={1} />
+          <Divider mt={6} mb={5} size={3} align="left" />
 
-          <Box mb={5} sx={{ textAlign: 'center' }}>
-            <Text as="p" size={3}>
+          <Box mb={5}>
+            <Text as="p" size={4}>
               Share this post on{' '}
               <Link href={twitterShare} target="_blank" title="Share this post on Twitter" variant="twitter">
                 Twitter

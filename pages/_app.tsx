@@ -45,7 +45,7 @@ function App({ Component, pageProps }: AppProps) {
           ...Wallop,
           h1: (props) => <Wallop.Text size={7} mb={5} weight="medium" {...props} as="h1" />,
           h2: (props) => <Wallop.Text size={5} mt={5} mb={4} mx="auto" weight="medium" {...props} as="h2" />,
-          h3: (props) => <Wallop.Text size={3} mt={4} mb={3} mx="auto" weight="medium" {...props} as="h3" />,
+          h3: (props) => <Wallop.Text size={3} mt={5} mb={3} mx="auto" weight="medium" {...props} as="h3" />,
           h4: (props) => <Wallop.Text size={3} mt={4} mb={3} mx="auto" weight="medium" {...props} as="h4" />,
           p: (props) => <Wallop.Text mb={5} {...props} size={4} as="p" />,
           a: ({ href = '', ...props }) => {
@@ -58,10 +58,10 @@ function App({ Component, pageProps }: AppProps) {
             }
             return <Wallop.Link href={href} {...props} />;
           },
-          hr: (props) => <Wallop.Divider my={5} mx="auto" size={1} {...props} />,
+          hr: (props) => <Wallop.Divider my={5} size={1} align="left" {...props} />,
           inlineCode: (props) => <Wallop.Code {...props} sx={{ color: 'black' }} />,
-          ul: (props) => <Wallop.Box mb={4} {...props} as="ul" />,
-          ol: (props) => <Wallop.Box mb={4} {...props} as="ol" />,
+          ul: (props) => <Wallop.Box mb={5} {...props} as="ul" />,
+          ol: (props) => <Wallop.Box mb={5} {...props} as="ol" />,
           li: (props) => (
             <li>
               <Wallop.Text {...props} size={4} />
@@ -69,8 +69,21 @@ function App({ Component, pageProps }: AppProps) {
           ),
           strong: (props) => <Wallop.Text {...props} weight="medium" sx={{ ...props.sx }} />,
           img: ({ ...props }) => (
-            <Wallop.Box as="span" mx={[-3, -5]} my={4} sx={{ display: 'inline-block' }}>
+            <Wallop.Box as="span" mx={[-3, -5]} my={5} sx={{ display: 'inline-block' }}>
               <img style={{ maxWidth: '100%', verticalAlign: 'middle' }} {...props} />
+            </Wallop.Box>
+          ),
+          video: (props) => (
+            <Wallop.Box
+              mx={[-3, -5]}
+              my={4}
+              sx={{
+                border: (theme) => `1px solid ${theme.colors.gray300}`,
+                borderRadius: 1,
+                overflow: 'hidden',
+              }}
+            >
+              <video {...props} autoPlay playsInline muted loop style={{ width: '100%', display: 'block' }}></video>
             </Wallop.Box>
           ),
           iframe: ({ ...props }) => (

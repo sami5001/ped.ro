@@ -1,6 +1,7 @@
 const readingTime = require('reading-time');
 const withPlugins = require('next-compose-plugins');
 const withOptimizedImages = require('next-optimized-images');
+const withVideos = require('next-videos');
 const withMdxEnhanced = require('next-mdx-enhanced');
 
 module.exports = withPlugins(
@@ -22,6 +23,7 @@ module.exports = withPlugins(
       pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
     }),
     withOptimizedImages,
+    withVideos,
   ],
   {
     // Next.js config
