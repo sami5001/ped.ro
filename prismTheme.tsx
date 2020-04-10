@@ -31,7 +31,7 @@ export const prismTheme = css`
     padding-bottom: ${theme.space[3]};
     padding-left: ${theme.space[3]};
     padding-right: ${theme.space[3]};
-    margin: ${theme.space[3]} 0;
+    margin: ${theme.space[3]} 0 ${theme.space[5]};
     overflow: auto;
     min-width: 100%;
   }

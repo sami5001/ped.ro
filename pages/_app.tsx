@@ -67,7 +67,7 @@ function App({ Component, pageProps }: AppProps) {
               <Wallop.Text {...props} size={4} />
             </li>
           ),
-          strong: (props) => <Wallop.Text {...props} weight="medium" sx={{ ...props.sx }} />,
+          strong: (props) => <Wallop.Text {...props} weight="bold" sx={{ ...props.sx }} />,
           img: ({ ...props }) => (
             <Wallop.Box as="span" mx={[-3, -5]} my={5} sx={{ display: 'inline-block' }}>
               <img style={{ maxWidth: '100%', verticalAlign: 'middle' }} {...props} />
@@ -104,10 +104,7 @@ function App({ Component, pageProps }: AppProps) {
         <Head>
           <title>Pedro Duarte</title>
           <link rel="icon" href="/favicon.png" />
-          <link
-            href="https://fonts.googleapis.com/css?family=Inter:400,500,600,700,800,900&display=swap"
-            rel="stylesheet"
-          />
+          <link href="https://fonts.googleapis.com/css?family=Inter:400,500,600,700&display=swap" rel="stylesheet" />
           <link href="https://fonts.googleapis.com/css?family=Fira+Mono&display=swap" rel="stylesheet" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         </Head>
