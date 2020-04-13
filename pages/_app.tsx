@@ -99,6 +99,25 @@ function App({ Component, pageProps }: AppProps) {
               {...props}
             />
           ),
+          pre: (props) => (
+            <Wallop.Box
+              mx={[-4, 0]}
+              mt={3}
+              mb={5}
+              p={3}
+              sx={{
+                borderRadius: [0, 2],
+                bg: 'rgba(255, 255, 255, 0.1)',
+                color: 'white',
+                fontFamily: 'mono',
+                fontSize: 3,
+                lineHeight: 3,
+                overflow: 'auto',
+              }}
+            >
+              <pre {...props} />
+            </Wallop.Box>
+          ),
         }}
       >
         <Head>

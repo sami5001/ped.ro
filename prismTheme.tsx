@@ -4,52 +4,20 @@ import { theme } from '@peduarte/wallop-system';
 export const prismTheme = css`
   code[class*='language-'],
   pre[class*='language-'] {
-    color: ${theme.colors.white};
-    background: none;
-    font-family: ${theme.fonts.mono};
-    font-size: ${theme.fontSizes[3]};
-    text-align: left;
+
     white-space: pre;
     word-spacing: normal;
     word-break: normal;
     word-wrap: normal;
-    line-height: ${theme.lineHeights[3]};
-
-    -moz-tab-size: 4;
-    -o-tab-size: 4;
     tab-size: 4;
-
-    -webkit-hyphens: none;
-    -moz-hyphens: none;
-    -ms-hyphens: none;
     hyphens: none;
+
+    text-align: left;
+		padding: 0;
+		margin: 0;
+		border-radius: inherit;
+		font-family: inherit;
   }
-
-  /* Code blocks */
-  pre[class*='language-'] {
-    padding-top: ${theme.space[3]};
-    padding-bottom: ${theme.space[3]};
-    padding-left: ${theme.space[3]};
-    padding-right: ${theme.space[3]};
-    margin: ${theme.space[3]} 0 ${theme.space[5]};
-    overflow: auto;
-    min-width: 100%;
-  }
-
-  :not(pre) > code[class*='language-'],
-  pre[class*='language-'] {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: ${theme.radii[2]};
-  }
-
-  /* Inline code */
-  :not(pre) > code[class*='language-'] {
-    padding: 0.1em;
-    border-radius: 0.3em;
-    white-space: normal;
-  }
-
-
 
   .token.comment,
   .token.prolog,
@@ -128,19 +96,22 @@ export const prismTheme = css`
     cursor: help;
   }
 
-  /* Line highlighting via https://github.com/j0lv3r4/mdx-prism */
-  .mdx-marker {
-    display: block;
-
-    /* Reset padding originally set in "pre[class*='language-']" */
+ /* Line highlighting via https://github.com/j0lv3r4/mdx-prism */
+ .mdx-marker {
+    /* Reset padding originally set in app.tsx */
     margin-left: -${theme.space[3]};
     margin-right: -${theme.space[3]};
     padding-left: ${theme.space[3]};
     padding-right: ${theme.space[3]};
 
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #222;
     box-shadow: inset 2px 0px 0 0px ${theme.colors.blue};
 
-    min-width: fit-content;
+		display: block;
+
+		* {
+			background-color: #222;
+
+		}
   }
 `;
