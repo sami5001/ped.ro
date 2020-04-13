@@ -1097,10 +1097,10 @@
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
   integrity sha512-shAmDyaQC4H92APFoIaVDHCx5bStIocgvbwQyxPRrbUY20V1EYTbSDchWbuwlMG3V17cprZhA6+78JfB+3DTPw==
 
-"@peduarte/wallop-system@^0.21.0":
-  version "0.21.0"
-  resolved "https://registry.yarnpkg.com/@peduarte/wallop-system/-/wallop-system-0.21.0.tgz#37ff606a399e1d189e6b5a85a867eb2c95b1b127"
-  integrity sha512-38ZTY2uGB30kmamFwPEE6Y6CxkrN9TWt5e/Pijby0yNNu4qKO8y9fUcAcjxb4eT6FOR65Iv8x1f+uVOXi0zhBg==
+"@peduarte/wallop-system@^0.22.0":
+  version "0.22.0"
+  resolved "https://registry.yarnpkg.com/@peduarte/wallop-system/-/wallop-system-0.22.0.tgz#f1371e6c44f71ce89ea9f3d548e71e1ac6a88f9e"
+  integrity sha512-SQZsfTRnNRZwZK9KUdTJVVH3G7mhcW3hVNgPW/qNU0lznXPIEMmjJn48I5D4B79sCjHCICiM2OfwjvSuA/2NVw==
   dependencies:
     "@modulz/primitives" "0.0.1-31"
     styled-components "^5.0.1"

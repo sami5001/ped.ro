@@ -59,7 +59,7 @@ function App({ Component, pageProps }: AppProps) {
             return <Wallop.Link href={href} {...props} />;
           },
           hr: (props) => <Wallop.Divider my={5} size={1} align="left" {...props} />,
-          inlineCode: (props) => <Wallop.Code {...props} sx={{ color: 'black' }} />,
+          inlineCode: (props) => <Wallop.Code {...props} />,
           ul: (props) => <Wallop.Box mb={5} {...props} as="ul" />,
           ol: (props) => <Wallop.Box mb={5} {...props} as="ol" />,
           li: (props) => (
