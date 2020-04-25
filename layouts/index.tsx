@@ -18,7 +18,7 @@ export default (frontMatter: FrontMatter) => {
 
     return (
       <Box sx={{ bg: 'black', color: 'white' }}>
-        <TitleAndMetaTags title={`${frontMatter.title} – Pedro Duarte`} />
+        <TitleAndMetaTags description={frontMatter.title} />
 
         <Container mx={[4, 5, 6]} py={[4, 5]}>
           <Box mb={[5, 6]}>

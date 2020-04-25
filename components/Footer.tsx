@@ -1,6 +1,6 @@
 import React from 'react';
 import NextLink from 'next/link';
-import { Link, Text, Box, Badge, Tooltip, Container, Flex } from '@peduarte/wallop-system';
+import { Link, Text, Box, Container, Flex } from '@peduarte/wallop-system';
 
 export const Footer = () => {
   return (

@@ -9,7 +9,7 @@ import { BlogCard } from '../../components/BlogCard';
 const Blog = () => {
   return (
     <Box>
-      <TitleAndMetaTags />
+      <TitleAndMetaTags description="Blog articles about design systems, jamstack and design–dev collaboration." />
 
       <Container mx={[4, 5, 6]} py={[4, 5]}>
         <Box mb={[5, 6]}>
