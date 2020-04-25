@@ -20,9 +20,9 @@ export default function TitleAndMetaTags({
   const path = pathname || router.pathname;
   const domain = `${url}${path}`;
   
-  const cardUrl = 'https%3A%2F%2Fi.microlink.io%2Fhttps%3A%2F%2Fcards.microlink.io%2F%3Fpreset%3Dpedro%26';
-  const query = encodeURIComponent(`title=${encodeURIComponent(description)}&domain=${encodeURIComponent(domain)}`);
-  const image = `${cardUrl}${query}`;
+  const cardUrl = 'https://i.microlink.io/';
+  const url = `https://cards.microlink.io/?preset=pedro&title=${description}&domain=${domain}`;
+  const image = `${cardUrl}${encodeURIComponent(url)}`;
 
   return (
     <Head>
