@@ -35,7 +35,7 @@ export default function TitleAndMetaTags({
       <meta property="og:description" content={description} />
 
       <meta name="twitter:url" content={domain} />
-      <meta name="twitter:title" content={title} />
+      <meta name="twitter:image" content={image} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:site" content="@peduarte" />
