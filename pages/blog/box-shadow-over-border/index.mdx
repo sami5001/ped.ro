@@ -1,0 +1,64 @@
+---
+title: 'Box shadow vs border'
+publishedAt: '2020-04-27'
+---
+
+A few weeks ago I did a live demo of [Modulz](https://modulz.app) on a chat with [Max Stoiber](https://twitter.com/mxstbr).
+
+During the demo, I styled a button component including its states. When I styled the `focus` state I spontaneously used a `box-shadow` to apply a "border" around the button, instead of the actual `border` property.
+
+To my surprise, Max noticed it and said:
+
+> Another thing I noticed is that for the focus state, you did that with a shadow instead of a border.
+
+A few days later, I received this tweet from [Rauno Freiberg](https://twitter.com/raunofreiberg/status/1252914280363692034):
+
+> [@peduarte](https://twitter.com/peduarte) At the Modulz demo, I remember you and [@mxstbr](https://twitter.com/mxstbr) talking about using box-shadow for focus styles and that in some way is better than other stuff? I can't find any resources on this. Help a friend out!
+
+Consider this article a response to Rauno's question.
+
+---
+
+## Visual difference
+
+Hover each box below
+
+<Flex sx={{alignItems:'flex-start', mb: 5}}>
+
+<Box sx={{width: '50%', maxWidth: 7}}>
+
+<AspectRatio ratio="1:1" sx={{
+    userSelect: 'none',
+    bg: 'yellow',
+    height: 5,
+    textAlign: 'center',
+    ':hover': {
+      border: (t) => `${t.sizes[3]} solid ${t.colors.red}`,
+    },
+  }}>
+
+</AspectRatio>
+
+</Box>
+
+<Box sx={{ width: [4, 5] }} />
+
+<Box sx={{width: '50%', maxWidth: 7}}>
+
+<AspectRatio ratio="1:1" sx={{
+    userSelect: 'none',
+    bg: 'yellow',
+    height: 5,
+    textAlign: 'center',
+    ':hover': {
+      boxShadow: (t) => `0 0 0 ${t.sizes[3]} ${t.colors.red}`,
+    },
+  }}>
+
+</AspectRatio>
+
+</Box>
+
+</Flex>
+
+---
