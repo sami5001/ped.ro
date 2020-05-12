@@ -87,8 +87,10 @@ function App({ Component, pageProps }: AppProps) {
             </Wallop.Box>
           ),
           iframe: ({ ...props }) => (
-            <Wallop.Box mb={4}>
-              <iframe {...props} />
+            <Wallop.Box mx={[-3, -5]} mt={3} mb={5}>
+              <Wallop.AspectRatio ratio="16:9">
+                <iframe {...props} style={{ width: '100%', height: '100%' }} />
+              </Wallop.AspectRatio>
             </Wallop.Box>
           ),
           blockquote: (props) => (
