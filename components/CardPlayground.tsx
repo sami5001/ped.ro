@@ -99,7 +99,7 @@ export function CardPlayground(props) {
           overflow: 'auto',
         }}
       >
-        <pre>{image}</pre>
+        <pre className="language-jsx">{image}</pre>
       </Box>
     </Box>
   );

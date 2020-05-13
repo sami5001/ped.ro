@@ -70,9 +70,19 @@ function App({ Component, pageProps }: AppProps) {
             </li>
           ),
           strong: (props) => <Wallop.Text {...props} weight="bold" sx={{ ...props.sx }} />,
-          img: ({ ...props }) => (
-            <Wallop.Box mx={[-3, -5]} my={5}>
+          Image: ({ children, ...props }) => (
+            <Wallop.Box as="figure" mx={[-3, -5]} my={5}>
               <img style={{ maxWidth: '100%', verticalAlign: 'middle' }} {...props} />
+              {children && (
+                <Wallop.Box as="figcaption">
+                  <Wallop.Text
+                    as="figcaption"
+                    sx={{ textAlign: 'center', fontSize: 1, lineHeight: 0, fontFamily: 'mono', color: 'gray' }}
+                  >
+                    {children}
+                  </Wallop.Text>
+                </Wallop.Box>
+              )}
             </Wallop.Box>
           ),
           video: (props) => (
