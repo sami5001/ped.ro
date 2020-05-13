@@ -13,7 +13,7 @@ export default (frontMatter: FrontMatter) => {
     const twitterShare = `
 		https://twitter.com/intent/tweet?
 		text="${frontMatter.title}" by @peduarte
-		&url=https://modulz.app${router.route}
+		&url=https://ped.ro${router.route}
 		`;
 
     return (
