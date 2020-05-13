@@ -1,3 +1,4 @@
+import React from 'react';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 import NextLink from 'next/link';
@@ -7,6 +8,7 @@ import * as Wallop from '@peduarte/wallop-system';
 import { prismTheme } from '../prismTheme';
 import { useAnalytics } from '../utils/analytics';
 import { Footer } from '../components/Footer';
+import { CardPlayground } from '../components/CardPlayground';
 
 const theme = Wallop.theme;
 
@@ -47,7 +49,7 @@ function App({ Component, pageProps }: AppProps) {
           h2: (props) => <Wallop.Text size={5} mt={5} mb={4} mx="auto" weight="medium" {...props} as="h2" />,
           h3: (props) => <Wallop.Text size={3} mt={5} mb={3} mx="auto" weight="medium" {...props} as="h3" />,
           h4: (props) => <Wallop.Text size={3} mt={4} mb={3} mx="auto" weight="medium" {...props} as="h4" />,
-          p: (props) => <Wallop.Text mb={5} {...props} size={4} as="p" />,
+          p: (props) => <Wallop.Text mb={4} {...props} size={4} as="p" />,
           a: ({ href = '', ...props }) => {
             if (href.startsWith('/')) {
               return (
@@ -60,17 +62,27 @@ function App({ Component, pageProps }: AppProps) {
           },
           hr: (props) => <Wallop.Divider my={5} size={1} align="left" {...props} />,
           inlineCode: (props) => <Wallop.Code {...props} />,
-          ul: (props) => <Wallop.Box mb={5} {...props} as="ul" />,
-          ol: (props) => <Wallop.Box mb={5} {...props} as="ol" />,
+          ul: (props) => <Wallop.Box mb={4} {...props} as="ul" />,
+          ol: (props) => <Wallop.Box mb={4} {...props} as="ol" />,
           li: (props) => (
             <li>
               <Wallop.Text {...props} size={4} />
             </li>
           ),
           strong: (props) => <Wallop.Text {...props} weight="bold" sx={{ ...props.sx }} />,
-          img: ({ ...props }) => (
-            <Wallop.Box as="span" mx={[-3, -5]} my={5} sx={{ display: 'inline-block' }}>
+          Image: ({ children, ...props }) => (
+            <Wallop.Box as="figure" mx={[-3, -5]} my={5}>
               <img style={{ maxWidth: '100%', verticalAlign: 'middle' }} {...props} />
+              {children && (
+                <Wallop.Box as="figcaption">
+                  <Wallop.Text
+                    as="figcaption"
+                    sx={{ textAlign: 'center', fontSize: 1, lineHeight: 0, fontFamily: 'mono', color: 'gray' }}
+                  >
+                    {children}
+                  </Wallop.Text>
+                </Wallop.Box>
+              )}
             </Wallop.Box>
           ),
           video: (props) => (
@@ -118,6 +130,7 @@ function App({ Component, pageProps }: AppProps) {
               <pre {...props} />
             </Wallop.Box>
           ),
+          CardPlayground: CardPlayground,
         }}
       >
         <Head>
