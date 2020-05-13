@@ -86,11 +86,10 @@ export function CardPlayground(props) {
       <Text sx={{ color: 'black' }}>Here's the generated URL based on the queries above:</Text>
 
       <Box
-        mx={[-4, 0]}
         mt={3}
         p={3}
         sx={{
-          borderRadius: [0, 2],
+          borderRadius: 2,
           bg: 'gray',
           color: 'white',
           fontFamily: 'mono',

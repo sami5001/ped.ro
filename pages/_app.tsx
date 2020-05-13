@@ -77,7 +77,7 @@ function App({ Component, pageProps }: AppProps) {
                 <Wallop.Box as="figcaption">
                   <Wallop.Text
                     as="figcaption"
-                    sx={{ textAlign: 'center', fontSize: 1, lineHeight: 0, fontFamily: 'mono', color: 'gray' }}
+                    sx={{ textAlign: 'center', fontSize: 1, lineHeight: 1, fontFamily: 'mono', color: 'gray' }}
                   >
                     {children}
                   </Wallop.Text>
