@@ -53,8 +53,8 @@ const Home = () => {
 
           <ul style={{ listStyle: 'none', paddingLeft: 0 }}>
             {blogPosts.map((post: FrontMatter) => (
-              <li>
-                <BlogCard key={post.title} frontMatter={post} />
+              <li key={post.title}>
+                <BlogCard frontMatter={post} />
               </li>
             ))}
           </ul>
