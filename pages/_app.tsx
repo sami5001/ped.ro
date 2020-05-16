@@ -8,7 +8,6 @@ import * as Wallop from '@peduarte/wallop-system';
 import { prismTheme } from '../prismTheme';
 import { useAnalytics } from '../utils/analytics';
 import { Footer } from '../components/Footer';
-import { CardPlayground } from '../components/CardPlayground';
 
 const theme = Wallop.theme;
 
@@ -130,7 +129,6 @@ function App({ Component, pageProps }: AppProps) {
               <pre {...props} />
             </Wallop.Box>
           ),
-          CardPlayground: CardPlayground,
         }}
       >
         <Head>

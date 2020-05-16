@@ -70,7 +70,7 @@ export function CardPlayground(props) {
           <Input ref={domainRef} defaultValue={domain} />
         </Box>
 
-        <Button mt={3} sx={{ width: '100%' }}>
+        <Button variant="blue" mt={3} sx={{ width: '100%' }}>
           Generate
         </Button>
       </Flex>
