@@ -57,7 +57,7 @@ function App({ Component, pageProps }: AppProps) {
                 </NextLink>
               );
             }
-            return <Wallop.Link href={href} target="_blank" {...props} />;
+            return <Wallop.Link href={href} target="_blank" rel="noopener" {...props} />;
           },
           hr: (props) => <Wallop.Divider my={5} size={1} align="left" {...props} />,
           inlineCode: (props) => <Wallop.Code {...props} />,

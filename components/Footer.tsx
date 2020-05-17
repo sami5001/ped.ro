@@ -29,13 +29,13 @@ export const Footer = () => {
           </Text>
 
           <Text as="p" size={2} weight="medium" mx={[0, 4]} mb={[1, 0]}>
-            <Link href="https://github.com/peduarte" target="_blank">
+            <Link href="https://github.com/peduarte" target="_blank" rel="noopener">
               Github
             </Link>
           </Text>
 
           <Text as="p" size={2} weight="medium" mx={[0, 4]} mb={[1, 0]}>
-            <Link href="https://twitter.com/peduarte" target="_blank">
+            <Link href="https://twitter.com/peduarte" target="_blank" rel="noopener">
               Twitter
             </Link>
           </Text>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Box, Text, Link } from '@peduarte/wallop-system';
+import { Container, Box, Text, Link, VisuallyHidden } from '@peduarte/wallop-system';
 import { blogPosts } from '../utils/blogPosts';
 import { FrontMatter } from '../types';
 import TitleAndMetaTags from '../components/TitleAndMetaTags';
@@ -16,13 +16,13 @@ const Home = () => {
             Pedro <Text sx={{ color: 'gray' }}>Duarte</Text>
           </Text>
 
-          <Text as="p" size={5}>
+          <Text as="h2" size={5}>
             I'm a UI developer interested in design systems, jamstack, user/dev experience and under engineering.
           </Text>
 
           <Text as="p" size={5} mt={5}>
             Right now I'm working with{' '}
-            <Link href="https://modulz.app" target="_blank">
+            <Link href="https://modulz.app" target="_blank" rel="noopener">
               Modulz
             </Link>{' '}
             to help close the gap between design—dev.
@@ -34,12 +34,14 @@ const Home = () => {
 
           <Text as="p" size={5} mt={5} mb={6}>
             You can find me on{' '}
-            <Link href="https://twitter.com/peduarte" target="_blank" variant="ghost">
-              <TwitterIcon />
+            <Link href="https://twitter.com/peduarte" target="_blank" rel="noopener" variant="ghost">
+              <VisuallyHidden>Github</VisuallyHidden>
+              <TwitterIcon arial-hidden />
             </Link>{' '}
             or{' '}
-            <Link href="https://github.com/peduarte" target="_blank" variant="ghost">
-              <GithubIcon />
+            <Link href="https://github.com/peduarte" target="_blank" rel="noopener" variant="ghost">
+              <VisuallyHidden>Twitter</VisuallyHidden>
+              <GithubIcon aria-hidden />
             </Link>
           </Text>
         </Container>
@@ -66,16 +68,16 @@ const Home = () => {
 
 export default Home;
 
-const TwitterIcon = () => {
+const TwitterIcon = (props) => {
   return (
-    <svg viewBox="0 0 24 24" width={24} fill="currentColor">
+    <svg viewBox="0 0 24 24" width={24} fill="currentColor" {...props}>
       <path d="M8.66 20c6.793 0 10.508-6.156 10.508-11.495 0-.175 0-.349-.01-.522A7.943 7.943 0 0021 5.892a6.883 6.883 0 01-2.121.635c.77-.504 1.348-1.298 1.624-2.234a7.03 7.03 0 01-2.346.98c-1.144-1.331-2.963-1.657-4.437-.794-1.473.862-2.234 2.699-1.856 4.48-2.97-.164-5.736-1.698-7.611-4.222-.98 1.846-.48 4.208 1.143 5.393a3.428 3.428 0 01-1.676-.506v.052c0 1.923 1.24 3.58 2.963 3.96a3.38 3.38 0 01-1.668.07c.484 1.645 1.87 2.772 3.45 2.805-1.307 1.124-2.923 1.734-4.586 1.733-.294-.001-.587-.02-.879-.059C4.689 19.371 6.654 20 8.66 19.997" />
     </svg>
   );
 };
-const GithubIcon = () => {
+const GithubIcon = (props) => {
   return (
-    <svg viewBox="0 0 24 24" width={24} fill="currentColor">
+    <svg viewBox="0 0 24 24" width={24} fill="currentColor" {...props}>
       <path
         fillRule="evenodd"
         clipRule="evenodd"

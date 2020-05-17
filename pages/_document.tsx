@@ -29,7 +29,7 @@ export default class Document extends NextDocument {
 
   render() {
     return (
-      <html>
+      <html lang="en">
         <Head>
           <script async src={gtagUrl} />
           <script dangerouslySetInnerHTML={{ __html: renderSnippet() }} />
