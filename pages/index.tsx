@@ -29,7 +29,7 @@ const Home = () => {
           </Text>
 
           <Text as="p" size={5} mt={5}>
-            I was born in Brazil, raised in the UK and now living in Barcelona with my little family.
+            Born in São Paulo, raised in London and living in Barcelona with my little family.
           </Text>
 
           <Text as="p" size={5} mt={5} mb={6}>
